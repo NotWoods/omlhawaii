@@ -87,7 +87,7 @@ function openProject(idGal) {
 		insertData(result.metadata);
 		insertImages(result.images);
 	};
-	r.open("GET", "/prj/" + id + ".yaml", true);
+	r.open("GET", "/prj/" + id + ".txt", true);
 	r.send();
 }
 
