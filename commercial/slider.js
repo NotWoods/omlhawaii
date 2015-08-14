@@ -1,3 +1,35 @@
-function sliderSetup(){for(var a=document.getElementsByClassName("slide"),c=0;c<a.length;c++)a[c].addEventListener("click",slide)}
-function slide(){for(var a=this.parentNode.firstChild,c=0,b=0;b<a.children.length;b++)c+=a.children[b].offsetWidth;c=Math.ceil(c/window.innerWidth);(b=a.getAttribute("data-current")||a.currentSlide)||(b=0);console.log(this.className);-1<this.className.indexOf("back")&&0<b?(a.setAttribute("style","transform:translateX(-"+(b-1)+"00vw)"),a.currentSlide=b-1,a.setAttribute("data-current",b-1)):-1<this.className.indexOf("next")&&b<c-1&&(a.setAttribute("style","transform:translateX(-"+(b+1)+"00vw)"),a.currentSlide=
-b+1,a.setAttribute("data-current",b+1))}"interactive"==document.body.readyState||"complete"==document.body.readyState?sliderSetup():document.body.onload=sliderSetup;
+function sliderSetup() {
+	var slideButtons = document.getElementsByClassName("slide");
+	for (var i = 0; i < slideButtons.length; i++) {
+		slideButtons[i].addEventListener("click", slide)
+	}
+}
+
+function slide() {
+	var slider = this.parentNode.firstChild,
+		slideWidth = 0;
+	for (var i = 0; i < slider.children.length; i++) {
+		slideWidth += slider.children[i].offsetWidth;
+	}
+	var slides = Math.ceil(slideWidth / window.innerWidth),
+		currentSlide = slider.getAttribute("data-current") || slider.currentSlide;
+	if (!currentSlide) currentSlide = 0;
+	
+	console.log(this.className);
+	
+	if ((this.className.indexOf("back") > -1) && currentSlide > 0) {
+		slider.setAttribute("style", "transform:translateX(-"+ (currentSlide - 1) +"00vw)")
+		slider.currentSlide = currentSlide - 1;
+		slider.setAttribute("data-current", currentSlide - 1)
+	} else if ((this.className.indexOf("next") > -1) && currentSlide < slides - 1) {
+		slider.setAttribute("style", "transform:translateX(-"+ (currentSlide + 1) +"00vw)")
+		slider.currentSlide = currentSlide + 1;
+		slider.setAttribute("data-current", currentSlide + 1)
+	}
+}
+
+if (document.body.readyState == "interactive" || document.body.readyState == "complete") {
+	sliderSetup();
+} else {
+	document.body.onload = sliderSetup;
+}

@@ -1,6 +1,101 @@
-var aside={name:null,scope:null,contractor:null,architect:null},projectPage;function getElements(){var a=document.getElementById("aside"),b=document.getElementsByClassName("arrow");projectPage=document.getElementById("project-page");b[0].addEventListener("click",buttonClick);b[1].addEventListener("click",buttonClick);aside.name=a.children[0];aside.scope=a.children[2];aside.contractor=a.children[4];aside.architect=a.children[6];openProject(location.hash)}
-function parsePage(a){a=a.split("\n").map(function(a,b,c){return a.trim()});for(var b=a.lastIndexOf("---"),c={},b=a.splice(b,a.length-b),d=0;d<a.length;d++){var e=a[d],f=e.indexOf(":");-1!=f&&(c[e.substring(0,f).trim()]=e.substring(f+1,e.length).trim())}b.splice(0,1);return{metadata:c,images:b}}
-function insertImages(a){for(var b=document.createDocumentFragment();projectPage.firstChild;)projectPage.removeChild(projectPage.firstChild);for(var c=0;c<a.length;c++){var d=document.createElement("img");d.src=a[c];b.appendChild(d)}projectPage.appendChild(b)}function insertData(a){aside.name.textContent=a.name;aside.scope.textContent=a.scope;aside.contractor.textContent=a.contractor;aside.architect.textContent=a.architect}
-function classToNum(a){return parseInt(a.substring(a.indexOf("s")+1,a.length))}function numToClass(a){return"view-project s"+a.toString()}function buttonClick(a){a=classToNum(projectPage.className);var b=projectPage.childElementCount,c=1;-1<this.className.indexOf("left-")&&(c=-1);1>a+c||a+c>b||(projectPage.className=numToClass(a+c))}
-function openProject(a){if(-1!=location.hash.indexOf("gallery")){for(a=a.substring(1,location.hash.indexOf("-gallery"));projectPage.firstChild;)projectPage.removeChild(projectPage.firstChild);projectPage.className=numToClass(1);var b=new XMLHttpRequest;b.onload=function(){var a=parsePage(this.responseText);insertData(a.metadata);insertImages(a.images)};b.open("GET","/prj/"+a+".yaml",!0);b.send()}}window.onhashchange=function(a){openProject(location.hash)};
-"interactive"==document.body.readyState||"complete"==document.body.readyState?getElements():document.body.onload=getElements;
+var aside = {name:null,scope:null,contractor:null,architect:null}, projectPage;
+
+function getElements() {
+	var asideDiv = document.getElementById("aside"),
+		arrows = document.getElementsByClassName("arrow");
+	
+	projectPage = document.getElementById("project-page");
+		
+	arrows[0].addEventListener("click", buttonClick);
+	arrows[1].addEventListener("click", buttonClick);
+	
+	aside.name = asideDiv.children[0];
+	aside.scope = asideDiv.children[2];
+	aside.contractor = asideDiv.children[4];
+	aside.architect = asideDiv.children[6];
+	
+	openProject(location.hash);
+}
+
+function parsePage(text) {
+	var items = text.split("\n")
+		.map(function(value, index, array) {return value.trim();}),
+	splitter = items.lastIndexOf("---"), metadata = {},
+	images = items.splice(splitter, items.length - splitter);
+	
+	for (var i = 0; i < items.length; i++) {
+		var value = items[i], colon = value.indexOf(":");
+		if (colon == -1) continue;
+		metadata[value.substring(0, colon).trim()] = value.substring(colon+1, value.length).trim();
+	}
+	images.splice(0, 1);
+	
+	return {
+		metadata: metadata,
+		images: images
+	}
+}
+
+function insertImages(images) {
+	var projectFragment = document.createDocumentFragment();
+	while (projectPage.firstChild) projectPage.removeChild(projectPage.firstChild);
+	
+	for (var i = 0; i < images.length; i++) {
+		var img = document.createElement("img");
+		img.src = images[i];
+		projectFragment.appendChild(img);
+	}
+	projectPage.appendChild(projectFragment);
+}
+
+function insertData(metadata) {
+	aside.name.textContent = metadata.name;
+	aside.scope.textContent = metadata.scope;
+	aside.contractor.textContent = metadata.contractor;
+	aside.architect.textContent = metadata.architect;
+}
+
+function classToNum(c) {
+	return parseInt(c.substring(c.indexOf("s")+1, c.length));
+}
+function numToClass(n) {
+	return "view-project s" + n.toString();
+}
+
+function buttonClick(e) {
+	var currentIndex = classToNum(projectPage.className), 
+		total = projectPage.childElementCount;
+	
+	var adder = 1;
+	if (this.className.indexOf("left-") > -1) adder = -1;
+	
+	if (currentIndex + adder < 1) return;
+	else if (currentIndex + adder > total) return;
+	
+	projectPage.className = numToClass(currentIndex + adder);
+}
+
+function openProject(idGal) {
+	if (location.hash.indexOf("gallery") == -1) return;
+	var id = idGal.substring(1, location.hash.indexOf("-gallery"));
+	while (projectPage.firstChild) projectPage.removeChild(projectPage.firstChild);
+	projectPage.className = numToClass(1);
+	
+	var r = new XMLHttpRequest();
+	r.onload = function() {
+		var result = parsePage(this.responseText);
+		insertData(result.metadata);
+		insertImages(result.images);
+	};
+	r.open("GET", "/prj/" + id + ".yaml", true);
+	r.send();
+}
+
+window.onhashchange = function(e) {
+	openProject(location.hash);
+}
+if (document.body.readyState == "interactive" || document.body.readyState == "complete") {
+	getElements();
+} else {
+	document.body.onload = getElements;
+}
