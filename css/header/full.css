@@ -1,20 +1,21 @@
-a {
+/*a {
 	color: inherit;
-}
+}*/
 
 .site-header {
-	height: 5.5em;
+	/*height: 5.5em;
 	background: #2e3c55;
-	text-align: center;
+	display: flex;*/
+
 	width: 100%;
-	display: flex;
 }
 
 .site-header-half {
-	flex-grow: 1;
+	/*flex: 1;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: center;*/
+
 	padding: 0.25em;
 }
 
@@ -26,6 +27,7 @@ a {
 	text-decoration: none;
 }
 .company-name {
+	display: inline;
 	border-color: currentColor;
 	border-style: solid;
 	border-width: 0.15em 0;
@@ -33,14 +35,15 @@ a {
 	line-height: 1.5em;
 }
 
-.site-nav {
+/*.site-nav {
 	background: #dcb869;
 	flex-wrap: wrap;
 	overflow: hidden;
-}
+}*/
 
 .nav-item {
-	padding: 0.5em;
+	/*padding: 0.5em;*/
+
 	text-decoration: none;
 	position: relative;
 }
