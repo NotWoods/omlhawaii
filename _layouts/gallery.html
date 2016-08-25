@@ -21,7 +21,7 @@
     <article id='project-page' class='project-container'>
 			<section class='gallery'>
 				<link rel='stylesheet' href='/css/gallery/items.css'>
-				<link rel='stylesheet' href='/css/gallery/buttons.css'>
+				{% include preload.html href="/css/gallery/buttons.css" %}
 				{% for image in page.images.list %}
 					<input type='radio'
 						name='gallery' hidden
@@ -65,7 +65,8 @@
 					</div>
 				{% endfor %}
 			</section>
-			<link rel='stylesheet' href='/css/gallery/info.css'>
+
+			{% include preload.html href="/css/gallery/info.css" %}
 			<aside id='project-details' class='project-details'>
 				{{ content }}
 			</aside>
