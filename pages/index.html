@@ -5,11 +5,19 @@ permalink: '/'
 <html>
 <head>
 	{% include head.html %}
+
+	<link
+		href='https://fonts.googleapis.com/css?family=Titillium+Web:400?text=ProjectsAbuCna'
+		rel='stylesheet'
+	>
+	<style>
+
+	</style>
 </head>
 	<body>
 		{% include header.html %}
+
 		<link rel='stylesheet' href='/css/three-d.css'>
-		<link rel='stylesheet' href='/css/page-transition.css'>
 		<main class='three-d home' id='homepage-main'>
 			{% for project in site.posts %}
 				<a class='project-3d' href='{{ project.url }}'>
@@ -18,13 +26,13 @@ permalink: '/'
 					>
 					<div class='project-3d-floaters project-3d-pane'>
 						<img class='project-3d-float project-3d-top' alt=''
-							src='{{project.images.homepage.top | prepend: project.images.folder}}' 
+							src='{{project.images.homepage.top | prepend: project.images.folder}}'
 						>
 						<img class='project-3d-float project-3d-left' alt=''
-							src='{{project.images.homepage.left | prepend: project.images.folder}}' 
+							src='{{project.images.homepage.left | prepend: project.images.folder}}'
 						>
 						<img class='project-3d-float project-3d-right' alt=''
-							src='{{project.images.homepage.right | prepend: project.images.folder}}' 
+							src='{{project.images.homepage.right | prepend: project.images.folder}}'
 						>
 					</div>
 				</a>

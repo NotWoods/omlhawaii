@@ -2,12 +2,16 @@
 <html>
 <head>
   {% include head.html %}
-	<link rel='stylesheet' 
-		href='/css/gallery/layout-large.css' 
+	<link
+		href='https://fonts.googleapis.com/css?family=Titillium+Web:400'
+		rel='stylesheet'
+	>
+	<link rel='stylesheet'
+		href='/css/gallery/layout-large.css'
 		media='(min-width: 35rem)'
 	>
-	<link rel='stylesheet' 
-		href='/css/gallery/layout-small.css' 
+	<link rel='stylesheet'
+		href='/css/gallery/layout-small.css'
 		media='(max-width: 35rem)'
 	>
 	<link rel='stylesheet' href='/css/gallery/tabs.css'>
@@ -19,7 +23,7 @@
 				<link rel='stylesheet' href='/css/gallery/items.css'>
 				<link rel='stylesheet' href='/css/gallery/buttons.css'>
 				{% for image in page.images.list %}
-					<input type='radio' 
+					<input type='radio'
 						name='gallery' hidden
 						class='gallery-tab'
 						value='{{ forloop.index }}'
@@ -27,9 +31,9 @@
 						{% if forloop.first %}checked{% endif %}
 					>
 					<div class='gallery-item gal-item-{{ forloop.index }}'>
-						<img 
-							src='{{ image | prepend: page.images.folder }}' 
-							alt='' 
+						<img
+							src='{{ image | prepend: page.images.folder }}'
+							alt=''
 							class='gallery-image gal-image-{{ forloop.index }}'
 						>
 
