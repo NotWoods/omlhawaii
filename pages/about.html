@@ -1,0 +1,43 @@
+---
+permalink: '/about/'
+---
+<!DOCTYPE html>
+<html>
+<head>
+	{% include head.html %}
+	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400italic,600' rel='stylesheet'>
+</head>
+	<body>
+		{% include header.html %}
+		<link rel='stylesheet' href='/css/three-d.css'>
+		<link rel='stylesheet' href='/css/about.css'>
+		<main class='three-d'>
+			{% assign sections = site.about_sections | sort: 'order' %}
+			{% for about in sections %}
+				<section class='project-3d' id='/{{ about.title | slugify }}'>
+					<img class='project-3d-hero project-3d-pane' alt=''
+						src='{{ about.image }}'
+					>
+					<div class='project-3d-text-container project-3d-floaters project-3d-pane'>
+						<div 
+							{% if forloop.index | modulo:2 === 1 %}
+								class='project-3d-odd project-3d-text {{ about.title | slugify }}'
+							{% else %}
+								class='project-3d-text {{ about.title | slugify }}'
+							{% endif %}
+							{% if about.tint %} 
+								{% comment %} 
+									Tint is 0.7 opacity calculated by Pallete API.
+									Potentially automate this in the future.
+								{% endcomment %}
+								style='background: {{ about.tint }}' 
+							{% endif %}
+						>
+							{{ about.output }}
+						</div>
+					</div>
+				</section>
+			{% endfor %}
+		</main>
+	</body>
+</html>

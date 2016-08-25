@@ -1,0 +1,11 @@
+.gallery {
+	height: 66vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.project-details {
+	height: calc(34vh - 7rem - 2em);
+	padding: 1em;
+	overflow-y: auto;
+}
