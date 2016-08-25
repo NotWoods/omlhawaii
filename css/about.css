@@ -1,0 +1,84 @@
+.project-3d-text-container {
+	transform: translateZ(1px) scale(.5);
+	pointer-events: auto;
+}
+
+.project-3d-text {
+	width: 16em;
+	position: absolute;
+	padding: 0.5em 1.5em;
+	left: -1.25em;
+}
+
+.project-3d-odd {
+	top: 50%;
+	left: auto;
+	right: -2em;
+}
+
+/*****************************/
+
+h3 {
+	margin: 0;
+}
+h3 + p {
+	margin-top: 0;
+}
+
+li {
+	display: block;
+}
+
+.contact-header {
+	float: left;
+	width: 1.5em;
+	margin-left: -2em;
+	overflow-x: hidden;
+}
+
+/*****************************/
+
+blockquote { 
+	position: relative;
+	font-style: italic; 
+}
+
+blockquote::before,
+blockquote::after {
+	position: absolute;
+	font-size: 5.5em;
+	content: '“';
+	line-height: 0.9em;
+}
+
+blockquote::before {
+	top: 0;
+	left: -0.6em;
+}
+
+blockquote::after {
+	bottom: -0.3em;
+	right: -0.3em;
+}
+
+cite {
+	font-style: italic;
+	text-align: right;
+	font-size: 0.9em;
+	display: block;
+}
+cite::before {
+	content: '—';
+}
+
+/*****************************/
+
+.vision {
+	left: 6em;
+}
+
+.vision-2 {
+	width: 60vw;
+	font-size: 0.875em;
+	font-weight: 600;
+}

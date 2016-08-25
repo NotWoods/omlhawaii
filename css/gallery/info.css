@@ -1,0 +1,21 @@
+.project-details {
+	font-size: 0.75em;
+}
+
+h2 {
+	font-size: 1.1em;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #2E3C55;
+}
+
+dt {
+	margin-top: 0.5em;
+}
+
+dt::after {
+	content: ':'
+}
+
+dd {
+	margin: 0;
+}

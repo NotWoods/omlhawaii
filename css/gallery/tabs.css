@@ -1,0 +1,23 @@
+.gallery-item {
+	visibility: hidden;
+}
+
+.gallery-item {
+	transition: opacity 0.2s linear, visibility 0.2s linear;
+	opacity: 0;
+}
+.gallery-tab:checked + .gallery-item {
+	visibility: visible;
+	opacity: 1;
+}
+
+.gallery-image {
+	transition: transform 0.3s ease;
+	transform: translateX(-100%);
+}
+.gallery-tab:checked ~ .gallery-item .gallery-image {
+	transform: translateX(100%);
+}
+.gallery-tab:checked + .gallery-item .gallery-image {
+	transform: none;
+}

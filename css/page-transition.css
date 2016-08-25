@@ -1,0 +1,39 @@
+body {
+	overflow: hidden;
+}
+
+.project-3d-float {
+	animation: 0.3s ease-out 1 paused forwards flyoff;
+}
+.project-3d-top { animation-delay: 0; }
+.project-3d-left { animation-delay: 0.2s; }
+.project-3d-right { animation-delay: 0.4s; }
+
+@keyframes flyoff {
+	from {
+		transform: none;
+	}
+	to {
+		transform: translateX(-100vw);
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 1;
+		visibility: visible;
+	}
+	to {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+@keyframes flyin {
+	from {
+		transform: translateX(100vw);
+	}
+	to {
+		transform: none;
+	}
+}

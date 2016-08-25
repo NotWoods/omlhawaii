@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% include head.html %}
+	<link rel='stylesheet' 
+		href='/css/gallery/layout-large.css' 
+		media='(min-width: 35rem)'
+	>
+	<link rel='stylesheet' 
+		href='/css/gallery/layout-small.css' 
+		media='(max-width: 35rem)'
+	>
+	<link rel='stylesheet' href='/css/gallery/tabs.css'>
+</head>
+  <body>
+    {% include header.html %}
+    <article id='project-page' class='project-container'>
+			<section class='gallery'>
+				<link rel='stylesheet' href='/css/gallery/items.css'>
+				<link rel='stylesheet' href='/css/gallery/buttons.css'>
+				{% for image in page.images.list %}
+					<input type='radio' 
+						name='gallery' hidden
+						class='gallery-tab'
+						value='{{ forloop.index }}'
+						id='gal-{{ forloop.index }}'
+						{% if forloop.first %}checked{% endif %}
+					>
+					<div class='gallery-item gal-item-{{ forloop.index }}'>
+						<img 
+							src='{{ image | prepend: page.images.folder }}' 
+							alt='' 
+							class='gallery-image gal-image-{{ forloop.index }}'
+						>
+
+						<label aria-role='button'
+							{% if forloop.first %}
+								class='arrow arrow-left arrow-disabled'
+								aria-disabled='true'
+							{% else %}
+								class='arrow arrow-left arrow-enabled'
+								aria-label='Previous Image'
+								for='gal-{{ forloop.index | minus:1 }}'
+							{% endif %}
+						>
+							<div class='arrow-lines'></div>
+						</label>
+
+						<label aria-role='button'
+							{% if forloop.last %}
+								class='arrow arrow-right arrow-disabled'
+								aria-disabled='true'
+							{% else %}
+								class='arrow arrow-right arrow-enabled'
+								aria-label='Next Image'
+								for='gal-{{ forloop.index | plus:1 }}'
+							{% endif %}
+						>
+							<div class='arrow-lines'></div>
+						</label>
+					</div>
+				{% endfor %}
+			</section>
+			<link rel='stylesheet' href='/css/gallery/info.css'>
+			<aside id='project-details' class='project-details'>
+				{{ content }}
+			</aside>
+		</article>
+  </body>
+</html>
