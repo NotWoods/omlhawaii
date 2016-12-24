@@ -1,0 +1,18 @@
+---
+---
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+	"name": "{{ site.title }}",
+	"alternateName": "Oakes Management",
+  "url": "{{ site.url }}",
+  "logo": "{{ '/img/logo/logo.svg' | absolute_url }}",
+	"contactPoint": [{
+    "@type": "ContactPoint",
+    "telephone": "+1-808-325-4008",
+		"faxNumber": "+1-808-325-2511",
+		"email": "{{ site.email }}",
+    "contactType": "customer service"
+  }],
+	"serviceArea": "Big Island, Hawaii"
+}
