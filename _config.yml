@@ -20,7 +20,7 @@ collections:
   residences:
     output: true
     permalink: /:path/
-  about_sections:
+  about:
 
 sass:
   sass_dir: css
