@@ -6,7 +6,7 @@
 {% assign res = include.residence %}
 
 {% comment %}A slugified version of the title.{% endcomment %}
-{% assign slug = p.title | slugify %}
+{% assign slug = res.title | slugify %}
 
 {% comment %}The image folder path for this page{% endcomment %}
 {% if res.images.folder %}

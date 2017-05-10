@@ -19,7 +19,7 @@ gems:
 collections:
   residences:
     output: true
-    permalink: /prj/:title.json
+    permalink: /:title-gallery/
   about:
 
 sass:
