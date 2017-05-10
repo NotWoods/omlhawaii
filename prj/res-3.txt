@@ -1,9 +1,9 @@
----
+--
 name: Hawaii Residence
 scope: 10,000sf High-End Luxury Home featuring 8 separate structures, pool, two spas, water features, and landscaping.
 contractor: OML Contracting Co
 architect: Zak Architecture
----
+--
 /img/res-3/main.jpg
 /img/res-3/a-living.jpg
 /img/res-3/b-firepit.jpg

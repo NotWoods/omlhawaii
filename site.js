@@ -3,33 +3,33 @@ var aside = {name:null,scope:null,contractor:null,architect:null}, projectPage;
 function getElements() {
 	var asideDiv = document.getElementById("aside"),
 		arrows = document.getElementsByClassName("arrow");
-	
+
 	projectPage = document.getElementById("project-page");
-		
+
 	arrows[0].addEventListener("click", buttonClick);
 	arrows[1].addEventListener("click", buttonClick);
-	
+
 	aside.name = asideDiv.children[0];
 	aside.scope = asideDiv.children[2];
 	aside.contractor = asideDiv.children[4];
 	aside.architect = asideDiv.children[6];
-	
+
 	openProject(location.hash);
 }
 
 function parsePage(text) {
 	var items = text.split("\n")
 		.map(function(value, index, array) {return value.trim();}),
-	splitter = items.lastIndexOf("---"), metadata = {},
+	splitter = items.lastIndexOf("--"), metadata = {},
 	images = items.splice(splitter, items.length - splitter);
-	
+
 	for (var i = 0; i < items.length; i++) {
 		var value = items[i], colon = value.indexOf(":");
 		if (colon == -1) continue;
 		metadata[value.substring(0, colon).trim()] = value.substring(colon+1, value.length).trim();
 	}
 	images.splice(0, 1);
-	
+
 	return {
 		metadata: metadata,
 		images: images
@@ -39,7 +39,7 @@ function parsePage(text) {
 function insertImages(images) {
 	var projectFragment = document.createDocumentFragment();
 	while (projectPage.firstChild) projectPage.removeChild(projectPage.firstChild);
-	
+
 	for (var i = 0; i < images.length; i++) {
 		var img = document.createElement("img");
 		img.src = images[i];
@@ -63,15 +63,15 @@ function numToClass(n) {
 }
 
 function buttonClick(e) {
-	var currentIndex = classToNum(projectPage.className), 
+	var currentIndex = classToNum(projectPage.className),
 		total = projectPage.childElementCount;
-	
+
 	var adder = 1;
 	if (this.className.indexOf("left-") > -1) adder = -1;
-	
+
 	if (currentIndex + adder < 1) return;
 	else if (currentIndex + adder > total) return;
-	
+
 	projectPage.className = numToClass(currentIndex + adder);
 }
 
@@ -80,7 +80,7 @@ function openProject(idGal) {
 	var id = idGal.substring(1, location.hash.indexOf("-gallery"));
 	while (projectPage.firstChild) projectPage.removeChild(projectPage.firstChild);
 	projectPage.className = numToClass(1);
-	
+
 	var r = new XMLHttpRequest();
 	r.onload = function() {
 		var result = parsePage(this.responseText);

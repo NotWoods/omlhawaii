@@ -1,0 +1,13 @@
+{
+	"metadata": {
+		"name": "{{ page.name }}",
+		"scope": "{{ page.scope }}",
+		"contractor": "{{ page.contractor }}",
+		"architect": "{{ page.architect }}"
+	},
+	"images": [
+		{% for image in page.images %}
+			{% unless forloop.first %},{% endunless %}"{{ image }}"
+		{% endfor %}
+	]
+}
