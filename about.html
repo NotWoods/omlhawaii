@@ -14,6 +14,7 @@ permalink: /about/
 		<main class="threeD" id="about">
 			{% assign sections = site.about | sort: 'order' %}
 			{% for section in sections %}
+			{% unless section.title == 'Vision' %}
 				{% assign slug = section.title | slugify %}
 				{% assign oddclass = '' %}
 				{% assign isodd = forloop.index | modulo:2 %}
@@ -26,6 +27,7 @@ permalink: /about/
 						</div>
 					</div>
 				</section>
+			{% endunless %}
 			{% endfor %}
 		</main>
 	</div>

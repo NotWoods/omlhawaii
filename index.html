@@ -7,15 +7,22 @@ layout: compress
 	{% include head.liquid %}
 	{% include loadCSS.liquid %}
 </head>
-
 <body>
-	<span class="gallery-selector" id="res-1-gallery"></span>
-	<span class="gallery-selector" id="res-2-gallery"></span>
-	<span class="gallery-selector" id="res-3-gallery"></span>
-
 	{% include header.liquid %}
 	<div id="container">
 		<main class="threeD">
+			{% assign vision = site.about | where:'title','Vision' %}
+			{% assign vision = vision[0] %}
+			{% assign slug = vision.title | slugify %}
+			<section id="{{ slug }}" class="project-cover threeD-cover">
+				<img src="{{ vision.image }}" class="threeD-hero threeD-pane {{ slug }}-hero">
+				<div class="threeD-text-container threeD-floaters threeD-pane">
+					<div class="threeD-text text {{ slug }}-text" style="background:{{ vision.tint }}">
+						{{ vision.content }}
+					</div>
+				</div>
+			</section>
+
 			{% for res in site.residences %}
 				{% include utils/residence_vars.liquid residence=res %}
 				{% assign homeimg = res.images.homepage %}
