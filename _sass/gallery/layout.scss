@@ -1,0 +1,37 @@
+.gallery {
+	position: relative;
+
+	overflow: hidden;
+}
+
+@media (min-width: 35em) {
+	.project-container {
+		position: relative;
+	}
+
+	.project-details {
+		width: 10rem;
+		padding: 1rem;
+		position: absolute;
+		right: 0;
+		top: 1rem;
+	}
+
+	.gallery {
+		margin-right: 12rem;
+
+		height: calc(100vh - 5.5rem);
+	}
+}
+@media (max-width: 35em) {
+	.gallery {
+		height: 66vh;
+	}
+
+	.project-details {
+		padding: 1em;
+
+		height: calc(34vh - 5.5rem - 2em);
+		overflow-y: auto;
+	}
+}

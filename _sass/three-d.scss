@@ -1,79 +1,84 @@
-.three-d {
+.threeD {
 	perspective: 2px;
 	overflow-x: hidden;
 	max-height: calc(100vh - 5.5em);
 	color: white;
 }
 
-.three-d::before,
-.three-d::after {
-	height: 10vh;
+.threeD::before,
+.threeD::after {
 	display: block;
 	content: '';
-}
-.three-d::before { height: 4.5vh; }
 
-.project-3d {
-	transform-style: preserve-3d;
+	height: 10vh;
+}
+
+.threeD-cover {
 	position: relative;
-	height: 80vh;
 	display: block;
-	pointer-events: none;
+
+	transform-style: preserve-3d;
+	height: 80vh;
 }
 
-.project-3d-pane {
+.threeD-pane {
 	position: absolute;
 	top: 0; bottom: 0;
 	left: 0; right: 0;
 }
 
-.project-3d-hero {
+.threeD-hero {
 	margin: auto;
+	z-index: 2;
+
 	max-width: 80vw;
 	max-height: 60vh;
-	pointer-events: auto;
 }
 
-.project-3d-floaters {
+.threeD-floaters {
+	z-index: 3;
+	margin: 10vh auto;
+	display: block;
+
 	transform: scale(.85) translateZ(.3px);
 	transform-style: preserve-3d;
-	margin: 10vh auto;
 	width: 80vw;
 	height: 60vh;
 }
 
-.project-3d-float {
+.threeD-float {
+	position: absolute;
+	z-index: 1;
+
 	max-width: 24vw;
 	max-height: 25vh;
-	position: absolute;
-	pointer-events: auto;
 }
-.project-3d-top {
+.threeD-top {
 	top: -80px;
 	left: 30vw;
 }
-.project-3d-left {
+.threeD-left {
 	bottom: -100px;
 	left: 216px;
 	max-height: 28vh;
 }
-.project-3d-right {
+.threeD-right {
 	top: 40vh;
 	right: 9vw;
 }
 
 @media (max-width: 55rem) {
-	.project-3d-top {
+	.threeD-top {
 		top: 30vh;
 		left: -1vw;
 	}
-	.project-3d-left {
+	.threeD-left {
 		top: 5vh;
 		left: 66vw;
-		/* bottom: auto; */
+		// bottom: auto;
 	}
-	.project-3d-right {
-		/* top: 40vh; */
+	.threeD-right {
+		// top: 40vh;
 		right: 20vw;
 	}
 }

@@ -3,8 +3,6 @@ $secondary-color: #2e3c55;
 
 .site-header {
 	display: flex;
-	z-index: 5;
-	position: fixed;
 
 	text-align: center;
 	height: 5.5em;
@@ -17,7 +15,7 @@ $secondary-color: #2e3c55;
 	justify-content: center;
 	align-items: center;
 	padding: .25em 1em;
-	flex: 1 50%;
+	flex: 1;
 }
 .logo {
 	background: $secondary-color;
@@ -41,7 +39,7 @@ $secondary-color: #2e3c55;
 
 $nav-border-height: 1px;
 .nav-link {
-	margin: 0.5em;
+	margin: 0 0.5em;
 	padding: 0 0.5em;
 	position: relative;
 
@@ -73,4 +71,20 @@ $nav-border-height: 1px;
 }
 .main-nav:hover .nav-link::before, .main-nav:hover .nav-link::after {
 	will-change: transform;
+}
+
+@media (max-width: 42em) {
+	.site-header {
+		flex-direction: column;
+	}
+	.logo {
+		flex: 2;
+		flex-wrap: nowrap;
+
+		font-size: 0.75em;
+	}
+	.logo-img {
+		height: 100%;
+		width: auto;
+	}
 }

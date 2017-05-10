@@ -11,13 +11,17 @@ permalink: /about/
 <body>
 	{% include header.liquid %}
 	<div id="container">
-		<main id="about">
+		<main class="threeD" id="about">
 			{% assign sections = site.about | sort: 'order' %}
 			{% for section in sections %}
-				<section id="{{ section.title | slugify }}" class="project-cover">
-					<img src="{{ section.image }}" class="main-img">
-					<div class="background">
-						<div class="text" style="background:{{ section.tint }}">
+				{% assign slug = section.title | slugify %}
+				{% assign oddclass = '' %}
+				{% assign isodd = forloop.index | modulo:2 %}
+				{% if isodd == 1 %}{% assign oddclass = ' threeD-odd' %}{% endif %}
+				<section id="{{ slug }}" class="project-cover threeD-cover">
+					<img src="{{ section.image }}" class="threeD-hero threeD-pane {{ slug }}-hero">
+					<div class="threeD-text-container threeD-floaters threeD-pane">
+						<div class="threeD-text text {{ slug }}-text{{ oddclass }}" style="background:{{ section.tint }}">
 							{{ section.content }}
 						</div>
 					</div>
@@ -25,6 +29,5 @@ permalink: /about/
 			{% endfor %}
 		</main>
 	</div>
-	<a href="#" class="back-button arrow"></a>
 </body>
 </html>

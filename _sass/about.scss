@@ -1,16 +1,16 @@
-.project-3d-text-container {
+.threeD-text-container {
 	transform: translateZ(1px) scale(.5);
 	pointer-events: auto;
 }
 
-.project-3d-text {
+.threeD-text {
 	width: 16em;
 	position: absolute;
 	padding: 0.5em 1.5em;
 	left: -1.25em;
 }
 
-.project-3d-odd {
+.threeD-odd {
 	top: 50%;
 	left: auto;
 	right: -2em;
@@ -38,9 +38,9 @@ li {
 
 /*****************************/
 
-blockquote { 
+blockquote {
 	position: relative;
-	font-style: italic; 
+	font-style: italic;
 }
 
 blockquote::before,
@@ -73,11 +73,15 @@ cite::before {
 
 /*****************************/
 
-.vision {
+.vision-hero {
+	max-height: 80vh;
+}
+
+.vision-text {
 	left: 6em;
 }
 
-.vision-2 {
+.vision-2-text {
 	width: 60vw;
 	font-size: 0.875em;
 	font-weight: 600;
