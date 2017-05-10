@@ -1,0 +1,16 @@
+{% comment %}
+	This include generates variables related to the provided `residence` parameter.
+{% endcomment %}
+
+{% comment %}Shorthand for the `residence` parameter{% endcomment %}
+{% assign res = include.residence %}
+
+{% comment %}A slugified version of the title.{% endcomment %}
+{% assign slug = p.title | slugify %}
+
+{% comment %}The image folder path for this page{% endcomment %}
+{% if res.images.folder %}
+	{% assign folder = res.images.folder %}
+{% else %}
+	{% assign folder = "/img/" | append: slug | relative_url %}
+{% endif %}

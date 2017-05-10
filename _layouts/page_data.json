@@ -1,13 +1,8 @@
 {
-	"metadata": {
-		"name": "{{ page.name }}",
-		"scope": "{{ page.scope }}",
-		"contractor": "{{ page.contractor }}",
-		"architect": "{{ page.architect }}"
-	},
-	"images": [
-		{% for image in page.images %}
-			{% unless forloop.first %},{% endunless %}"{{ image }}"
+	"body": "{{ content }}",
+	"images": {
+		{% for imghash in page.images.list %}
+			{% unless forloop.first %},{% endunless %}"{{ page.images.folder }}{{ imghash[0] }}": "{{ imghash[1] }}"
 		{% endfor %}
-	]
+	}
 }

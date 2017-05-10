@@ -19,7 +19,7 @@ gems:
 collections:
   residences:
     output: true
-    permalink: /:path/
+    permalink: /prj/:title.json
   about:
 
 sass:
@@ -27,13 +27,13 @@ sass:
   style: compressed
 
 defaults:
-  - scope:
-      path: ""
-    values:
+ # - scope:
+ #     path: ""
+ #   values:
 
   - scope:
       path: ""
       type: residences
     values:
-      layout: gallery
+      layout: page_data
       images:
