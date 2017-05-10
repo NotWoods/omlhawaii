@@ -23,7 +23,7 @@ collections:
   about:
 
 sass:
-#  style: compressed
+  style: compressed
 
 defaults:
  # - scope:

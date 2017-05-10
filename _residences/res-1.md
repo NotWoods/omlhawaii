@@ -1,4 +1,5 @@
 ---
+title: Hawaiian Craftsman
 images:
   folder: "/img/res-1/"
   list:
@@ -16,7 +17,7 @@ images:
     left: b-lawn.jpg
     right: c-living.jpg
 ---
-## Hawaii Residence
+## Hawaiian Craftsman
 
 10,000sf High-End Luxury Home featuring indoor outdoor entertainment spaces,
 master suites, office suites, ranch-style guest cottages, pool, spa,

@@ -1,4 +1,5 @@
 ---
+title: Hawaii Residence
 images:
   folder: "/img/res-3/"
   list:
