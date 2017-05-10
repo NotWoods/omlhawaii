@@ -1,12 +1,11 @@
-#company-name,
-#logo-image {
+#company-name, #logo-image {
 	vertical-align: middle
 }
 
 #logo,
 #main-nav {
-	position: absolute;
-	top: 0
+	top: 0;
+	position: absolute
 }
 
 #logo,
@@ -96,7 +95,7 @@ q {
 .background,
 .background-img,
 aside {
-	position: absolute
+	position: absolute;
 }
 
 #main-nav a::after,
@@ -135,7 +134,8 @@ aside {
 
 main {
 	perspective: 2px;
-	overflow-x: hidden
+	overflow-x: hidden;
+	max-height: 100vh;
 }
 
 .project-cover {

@@ -1,0 +1,56 @@
+body {
+	margin: 0;
+	background-color: #eee;
+	font-family: "Titillium Web", sans-serif;
+}
+
+#main-header {
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 88px
+}
+
+main {
+	height: 100%;
+	overflow-y: auto
+}
+
+#home {
+	margin-top: 10vh;
+	display: block
+}
+
+.project-cover {
+	position: relative;
+	height: 80vh
+}
+
+.project-cover:first-child {
+	margin-top: 10vh
+}
+
+.project-cover:last-child {
+	margin-bottom: 10vh
+}
+
+.main-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	max-height: 60vh;
+	max-width: 80%;
+	margin: auto
+}
+
+#logo,
+#main-nav,
+.background,
+aside,
+.arrow,
+article {
+	display: none
+}

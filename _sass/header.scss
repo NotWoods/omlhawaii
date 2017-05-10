@@ -15,13 +15,14 @@ $secondary-color: #2e3c55;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	align-items: baseline;
+	align-items: center;
 	padding: .25em 1em;
 	flex: 1 50%;
 }
 .logo {
 	background: $secondary-color;
 	color: $primary-color;
+	text-decoration: none;
 }
 .main-nav {
 	background: $primary-color;
@@ -33,28 +34,39 @@ $secondary-color: #2e3c55;
 
 	font-size: 1.5em;
 	text-transform: uppercase;
-	border: currentColor solid 3px 0;
+	border: currentColor solid;
+	border-width: 3px 0;
 	white-space: nowrap;
 }
 
 $nav-border-height: 1px;
 .nav-link {
 	margin: 0.5em;
-	border: transparent solid $nav-border-height 0;
 	padding: 0 0.5em;
 	position: relative;
+
+	border: transparent solid;
+	border-width: $nav-border-height 0;
+	color: inherit;
+	text-decoration: inherit;
 }
 .nav-link::before, .nav-link::after {
 	content: '';
 	position: absolute;
-	height: $nav-border-height;
-	width: 100%;
 	top: -$nav-border-height;
 	left: 0;
 
+	background: $secondary-color;
+	height: $nav-border-height;
+	width: 100%;
 	transform: scaleX(0);
 	transform-origin: 0;
 	transition: transform 0.4s ease;
+}
+.nav-link::after {
+	top: auto;
+	bottom: -$nav-border-height;
+	transform-origin: 100%;
 }
 .nav-link:hover::before, .nav-link:hover::after {
 	transform: scaleX(1);

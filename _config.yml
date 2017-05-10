@@ -19,12 +19,11 @@ gems:
 collections:
   residences:
     output: true
-    permalink: /:title-gallery/
+    permalink: /gallery/:title/
   about:
 
 sass:
-  sass_dir: css
-  style: compressed
+#  style: compressed
 
 defaults:
  # - scope:
@@ -35,5 +34,5 @@ defaults:
       path: ""
       type: residences
     values:
-      layout: page_data
+      layout: gallery
       images:

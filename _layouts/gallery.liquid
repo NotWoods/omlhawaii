@@ -4,17 +4,12 @@ layout: compress
 <!doctype html>
 <html>
 <head>
-  {% include head.html %}
+  {% include head.liquid %}
+	{% include loadCSS.html %}
 	{% include utils/residence_vars.liquid residence=page %}
-	<link rel="stylesheet" href="/css/gallery/layout-large.css" media="(min-width: 35rem)">
-	<link rel="stylesheet" href="/css/gallery/layout-small.css" media="(max-width: 35rem)">
-	<link rel="stylesheet" href="/css/gallery/tabs.css">
-	<link rel="stylesheet" href="/css/gallery/items.css">
-	<link rel="stylesheet" href="/css/gallery/buttons.css">
-	<link rel="stylesheet" href="/css/gallery/info.css">
 </head>
   <body>
-    {% include header.html %}
+    {% include header.liquid %}
     <article id="project-page" class="project-container">
 			<!--
 				These radio inputs correspond to each gallery image. The selected
