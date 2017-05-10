@@ -16,15 +16,21 @@ layout: compress
   <body>
     {% include header.html %}
     <article id="project-page" class="project-container">
+			<!--
+				These radio inputs correspond to each gallery image. The selected
+				radio represents the currently shown image.
+			-->
+			{% for image in page.images.list %}
+				<input type="radio"
+					name="gallery" hidden
+					class="gallery-tab"
+					value="{{ forloop.index }}"
+					id="gal-{{ forloop.index }}"
+					{% if forloop.first %}checked{% endif %}
+				>
+			{% endfor %}
 			<section class="gallery">
 				{% for image in page.images.list %}
-					<input type="radio"
-						name="gallery" hidden
-						class="gallery-tab"
-						value="{{ forloop.index }}"
-						id="gal-{{ forloop.index }}"
-						{% if forloop.first %}checked{% endif %}
-					>
 					<div class="gallery-item gal-item-{{ forloop.index }}">
 						<img
 							src="{{ image[0] | prepend: folder }}"

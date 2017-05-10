@@ -1,0 +1,64 @@
+$primary-color: #dcb869;
+$secondary-color: #2e3c55;
+
+.site-header {
+	display: flex;
+	z-index: 5;
+	position: fixed;
+
+	text-align: center;
+	height: 5.5em;
+	width: 100%;
+}
+
+.site-header-half {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: baseline;
+	padding: .25em 1em;
+	flex: 1 50%;
+}
+.logo {
+	background: $secondary-color;
+	color: $primary-color;
+}
+.main-nav {
+	background: $primary-color;
+	color: #444;
+}
+
+.company-name {
+	margin-left: 0.25em;
+
+	font-size: 1.5em;
+	text-transform: uppercase;
+	border: currentColor solid 3px 0;
+	white-space: nowrap;
+}
+
+$nav-border-height: 1px;
+.nav-link {
+	margin: 0.5em;
+	border: transparent solid $nav-border-height 0;
+	padding: 0 0.5em;
+	position: relative;
+}
+.nav-link::before, .nav-link::after {
+	content: '';
+	position: absolute;
+	height: $nav-border-height;
+	width: 100%;
+	top: -$nav-border-height;
+	left: 0;
+
+	transform: scaleX(0);
+	transform-origin: 0;
+	transition: transform 0.4s ease;
+}
+.nav-link:hover::before, .nav-link:hover::after {
+	transform: scaleX(1);
+}
+.main-nav:hover .nav-link::before, .main-nav:hover .nav-link::after {
+	will-change: transform;
+}

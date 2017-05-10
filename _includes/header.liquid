@@ -1,11 +1,11 @@
-<header id="main-header" class="opaque">
-		<a id="logo" href="/#home">
-			{% include logo.svg %}
-			<span id="company-name">OML Contracting Co</span>
-		</a>
-		<nav id="main-nav">
-			<a href="/">Work</a>
-			<a href="/about#vision">About</a>
-			<a href="/about#contact">Contact</a>
-		</nav>
-	</header>
+<header class="site-header" id="main-header">
+	<a class="site-header-half logo" href="/">
+		<img src="/img/logo/logo.svg" width="80" height="80" alt="">
+		<h1 class="company-name">{{ site.title }}</h1>
+	</a>
+	<nav id="site-header-half main-nav">
+		<a class="nav-link" href="/">Work</a>
+		<a class="nav-link" href="/about/#vision">About</a>
+		<a class="nav-link" href="/about/#contact">Contact</a>
+	</nav>
+</header>
