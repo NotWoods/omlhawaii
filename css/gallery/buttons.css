@@ -1,0 +1,72 @@
+.arrow, .arrow::before {
+	display: block;
+	border-radius: 50%;
+	position: absolute;
+	top: 0; bottom: 0;
+}
+
+.arrow {
+	color: white;
+	border: 0.125em solid currentColor;
+	width: 3em; height: 3em;
+	margin: auto 0;
+}
+
+.arrow::before {
+	content: '';
+	background: black;
+	width: 100%;
+	opacity: 0.5;
+}
+
+.arrow-left { left: 1em; }
+.arrow-right { 
+	right: 1em;
+	transform: scaleX(-1); 
+}
+
+/*****************************/
+
+.arrow-lines::before,
+.arrow-lines::after {
+	content: '';
+	display: block;
+	position: absolute;
+
+	left: 0.65em;
+	width: 1.5em;
+	height: 0.125em;
+	background: currentColor;
+}
+
+.arrow-lines::before {
+	top: 1.05em;
+	transform: rotateZ(-30deg);
+}
+.arrow-lines::after {
+	bottom: 1.05em;
+	transform: rotateZ(30deg);
+}
+
+/*****************************/
+
+.arrow-disabled {
+	opacity: 0.5;
+}
+
+.arrow-enabled {
+	cursor: pointer;
+}
+
+.arrow-enabled:active::before {
+	opacity: 0.8;
+}
+
+.arrow-enabled:hover .arrow-lines::before {
+	transition: transform 0.5s ease;
+	transform: rotate(150deg);
+}
+.arrow-enabled:hover .arrow-lines::after {
+	transition: transform 0.5s ease;
+	transform: rotate(-150deg);
+}

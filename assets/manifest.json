@@ -1,0 +1,23 @@
+---
+permalink: /manifest.json
+---
+{
+	"name": "OML Contracting Co",
+	"short_name": "OML",
+	"icons": [
+		{
+			"src": "\/android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image\/png"
+		},
+		{
+			"src": "\/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image\/png"
+		}
+	],
+	"theme_color": "#2e3c55",
+	"display": "browser",
+	"lang": "en",
+	"background_color": "#2e3c55"
+}
