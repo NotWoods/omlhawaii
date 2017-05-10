@@ -11,7 +11,7 @@ permalink: /
 
 		<link rel="stylesheet" href="/css/three-d.css">
 		<main class="three-d home" id="homepage-main">
-			{% for project in site.posts %}
+			{% for project in site.residences %}
 				{% assign homeimg = project.images.homepage %}
 				{% assign folder = project.images.folder %}
 				{% unless folder %}
@@ -36,7 +36,7 @@ permalink: /
 						>
 						<img
 							class="project-3d-float project-3d-right"
-							alt="{{ project.images.list[homeimg.right }}"
+							alt="{{ project.images.list[homeimg.right] }}"
 							src="{{ homeimg.right | prepend: folder }}"
 						>
 					</div>
