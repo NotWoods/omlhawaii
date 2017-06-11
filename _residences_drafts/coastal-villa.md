@@ -1,5 +1,5 @@
 ---
-title: Ocean Villa
+title: Coastal Villa
 images:
   folder: "/img/res-4/"
   list:
@@ -10,7 +10,7 @@ images:
     left:
     right:
 ---
-## Ocean Villa
+## Coastal Villa
 
 General Contractor
 : OML Contracting Co

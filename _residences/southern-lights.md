@@ -1,5 +1,5 @@
 ---
-title: Hawaii Residence
+title: Southern Lights
 images:
   folder: "/img/res-3/"
   list:
@@ -17,7 +17,7 @@ images:
     left: b-firepit.jpg
     right: c-studio.jpg
 ---
-## Hawaii Residence
+## Southern Lights
 
 10,000sf High-End Luxury Home featuring 8 separate structures, pool,
 two spas, water features, and landscaping.

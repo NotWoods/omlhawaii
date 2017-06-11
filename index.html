@@ -11,6 +11,7 @@ layout: compress
 	{% include header.liquid %}
 	<div id="container">
 		<main class="threeD">
+			{% comment %}
 			{% assign vision = site.about | where:'title','Vision' %}
 			{% assign vision = vision[0] %}
 			{% assign slug = vision.title | slugify %}
@@ -22,12 +23,14 @@ layout: compress
 					</div>
 				</div>
 			</section>
+			{% endcomment %}
 
 			{% for res in site.residences %}
 				{% include utils/residence_vars.liquid residence=res %}
 				{% assign homeimg = res.images.homepage %}
 				<section class="threeD-cover" id="{{ slug }}">
 					<img src="{{ homeimg.main | prepend: folder }}" class="threeD-pane threeD-hero">
+					<!--<h1 class="threeD-pane threeD-label">{{ res.title }}</h1>-->
 					<a class="threeD-pane threeD-floaters" href="{{ res.url }}">
 						<img src="{{ homeimg.top | prepend: folder }}" class="threeD-float threeD-top">
 						<img src="{{ homeimg.left | prepend: folder }}" class="threeD-float threeD-left">

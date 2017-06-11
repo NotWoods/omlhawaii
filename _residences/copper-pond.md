@@ -1,5 +1,5 @@
 ---
-title: Coastal House
+title: Copper Pond
 images:
   folder: "/img/res-2/"
   list:
@@ -16,7 +16,7 @@ images:
     left: b-courtyard.jpg
     right: c-living.jpg
 ---
-## Coastal House
+## Copper Pond
 
 9,980sf High-End Luxury Home featuring pool, spa, water amenities,
 and ocean view residential quarters surrounding a center courtyard.
