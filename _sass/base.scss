@@ -8,3 +8,47 @@ a {
 	text-decoration: inherit;
 	color: inherit;
 }
+
+// three-d.scss
+
+.threeD {
+	perspective: 2px;
+	overflow-x: hidden;
+	max-height: calc(100vh - 5.5em);
+	color: white;
+}
+
+.threeD::before,
+.threeD::after {
+	display: block;
+	content: '';
+
+	height: 10vh;
+}
+
+.threeD-floaters {
+	display: none;
+}
+
+.threeD-cover {
+	position: relative;
+	display: block;
+
+	transform-style: preserve-3d;
+	height: 80vh;
+}
+
+.threeD-pane {
+	position: absolute;
+	top: 0; bottom: 0;
+	left: 0; right: 0;
+}
+
+.threeD-hero {
+	margin: auto;
+	z-index: 2;
+
+	max-width: 80vw;
+	max-height: 60vh;
+}
+

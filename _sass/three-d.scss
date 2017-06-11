@@ -1,3 +1,4 @@
+/* Moved to base.scss
 .threeD {
 	perspective: 2px;
 	overflow-x: hidden;
@@ -34,9 +35,18 @@
 	max-width: 80vw;
 	max-height: 60vh;
 }
+*/
+.threeD-label {
+	z-index: 3;
+	top: auto;
+	bottom: 45%;
+
+	text-align: center;
+	transform: scale(.85) translateZ(.2px);
+}
 
 .threeD-floaters {
-	z-index: 3;
+	z-index: 4;
 	margin: 10vh auto;
 	display: block;
 

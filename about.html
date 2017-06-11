@@ -12,9 +12,11 @@ permalink: /about/
 	{% include header.liquid %}
 	<div id="container">
 		<main class="threeD" id="about">
+			{% assign ignore = 'Vision' %}
+			{% assign ignore = '' %}
 			{% assign sections = site.about | sort: 'order' %}
 			{% for section in sections %}
-			{% unless section.title == 'Vision' %}
+			{% unless section.title == ignore %}
 				{% assign slug = section.title | slugify %}
 				{% assign oddclass = '' %}
 				{% assign isodd = forloop.index | modulo:2 %}
