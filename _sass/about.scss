@@ -80,10 +80,18 @@ cite::before {
 .vision-text {
 	left: 6em;
 	font-size: 1.2em;
+	max-width: 100%;
 }
 
 .vision-2-text {
 	width: 60vw;
 	font-size: 0.875em;
 	font-weight: 600;
+}
+
+@media (max-width: 20em) {
+	.vision-text {
+		left: auto;
+		font-size: 1.1em;
+	}
 }
