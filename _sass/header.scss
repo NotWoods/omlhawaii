@@ -32,9 +32,18 @@ $secondary-color: #2e3c55;
 
 	font-size: 1.5em;
 	text-transform: uppercase;
-	border: currentColor solid;
-	border-width: 3px 0;
 	white-space: nowrap;
+}
+.company-title {
+	margin: 0;
+
+	font-size: 1em;
+	border-bottom: currentColor 3px solid;
+}
+.company-subtitle {
+	display: block;
+
+	font-size: 0.7em;
 }
 
 $nav-border-height: 1px;

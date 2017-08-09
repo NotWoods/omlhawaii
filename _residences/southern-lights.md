@@ -19,11 +19,14 @@ images:
 ---
 ## Southern Lights
 
-10,000sf High-End Luxury Home featuring 8 separate structures, pool,
-two spas, water features, and landscaping.
+**RESIDENCE:**  North Kona, Hawaii
 
-General Contractor
-: OML Contracting Co
+### Project Scope:
+10K sf House of lights featuring separate buildings for main living, media, studio, office,
+entertainment pavilion, bedrooms, and garage. Outdoor amenities include pool, spas, fire place, BBQ,
+courtyard, and ocean view. Constructed of Venetian Plaster, Alaskan Yellow Cedar, coral, and zinc roof
+shingles. Designed emphasizes texture, clean lines, and artistic lights.
 
-Architect
-: Zak Architecture
+### Construction Partners:
+Oakes Management (GC), Zak Architecture, Nicole Hollis Interiors, Hayes Structural
+Design, Morrison Mechanical, Van Leuven Electrical Engineer, Cole Design Assoc. Landscape Architecture

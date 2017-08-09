@@ -11,8 +11,10 @@ tint: 'rgba(99, 86, 84, 0.7)'
 > it will remain with you all the days of your life.
 <cite>Frank Lloyd Wright</cite>
 
-In the realm of General Contracting and Construction Management,
-OML Contracting Co is dedicated to the care and needs of our
-clients and consultants. We’re here to sheppard our client’s dreams,
-to transform two-dimensional visions into three-dimensional artistry,
-and to devote our time and means to the creation of spatial beauty.
+In the realm of General Contracting and Construction
+Management, Oakes Management, LLC is dedicated to
+the care and needs of our clients and consultants.
+We’re here to shepherd our client’s dreams, to transform
+two-dimensional visions into three-dimensional artistry,
+and to devote our time and means to the creation of
+spatial beauty.
