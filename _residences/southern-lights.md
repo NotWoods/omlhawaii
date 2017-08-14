@@ -22,11 +22,10 @@ images:
 **RESIDENCE:**  North Kona, Hawaii
 
 ### Project Scope:
-10K sf House of lights featuring separate buildings for main living, media, studio, office,
+10K sf house of lights featuring separate buildings for main living, media, studio, office,
 entertainment pavilion, bedrooms, and garage. Outdoor amenities include pool, spas, fire place, BBQ,
 courtyard, and ocean view. Constructed of Venetian Plaster, Alaskan Yellow Cedar, coral, and zinc roof
-shingles. Designed emphasizes texture, clean lines, and artistic lights.
+shingles. Design emphasizes texture, clean lines, and artistic lights.
 
-### Construction Partners:
-Oakes Management (GC), Zak Architecture, Nicole Hollis Interiors, Hayes Structural
-Design, Morrison Mechanical, Van Leuven Electrical Engineer, Cole Design Assoc. Landscape Architecture
+### Contractor:
+Oakes Management, LLC

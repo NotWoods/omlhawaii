@@ -22,15 +22,13 @@ images:
 **RESIDENCE:**  North Kona, HI
 
 ### Project Scope:
+10K sf ranch-style
+resort residence featuring indoor
+outdoor entertainment spaces,
+master suite, bunkhouse themed
+guest cottage, pool, spa, water
+features, and landscaping that
+merges with the ocean scape
 
-10,000sf Ranch-style resort residence featuring indoor
-outdoor entertainment spaces, master suite, bunkhouse
-themed guest cottage, pool, spa, water features, and
-landscaping that merges with the ocean scape.
-
-
-### Construction Partners:
-
-Oakes Management (GC), Walker
-Warner Architects, GFDS Engineers, LEI Integrated,
-Morrison Mechanical, Tamura Landscape Architect
+### Contractor:
+Oakes Management, LLC

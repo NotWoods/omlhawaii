@@ -1,14 +1,23 @@
 ---
 title: Coastal Arts & Crafts
 images:
-  folder: "/img/res-4/"
+  folder: "/img/coastal-arts-and-crafts/"
   list:
-
+    ocean-view.jpg: Ocean View
+    main-entry.jpg: Main Entry
+    pool.jpg: Pool
+    entry-foyer.jpg: Entry Foyer
+    view-from-office.jpg: View from Office 
+    living-room-lanai.jpg: Living Room Lanai
+    shade-trellis.jpg: Shade Trellis
+    sitting-room.jpg: Sitting Room
+    dining-room.jpg: Dining Room
+    meditation-room.jpg: Meditation Room
   homepage:
-    main:
-    top:
-    left:
-    right:
+    main: ocean-view.jpg
+    top: dining-room.jpg
+    left: entry-foyer.jpg
+    right: living-room-lanai.jpg
 ---
 ## Coastal Arts & Crafts
 
@@ -32,8 +41,5 @@ and tenon joints, rabbets, lock miters,
 bow-tie wood joinery indicative of the
 Arts and Craft era are used throughout.
 
-### Project Partners:
-Oakes Management
-(GC), deReus Architects, GDFS
-Engineers, Philpotts Interiors, Tamura
-Landscape Architecture, KGM Lighting
+### Contractor:
+Oakes Management, LLC
