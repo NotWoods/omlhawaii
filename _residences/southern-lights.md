@@ -3,9 +3,9 @@ title: Southern Lights
 images:
   folder: "/img/res-3/"
   list:
-    main.jpg: ""
+    main.jpg: Pool View
     a-living.jpg: ""
-    b-firepit.jpg: ""
+    b-firepit.jpg: Pavilion & Fire Pit
     c-studio.jpg: ""
     back_night.jpg: ""
     powder_room.jpg: ""

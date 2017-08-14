@@ -3,14 +3,14 @@ title: Ranch House
 images:
   folder: "/img/res-1/"
   list:
-    main.jpg: ""
-    a-lanai.jpg: ""
+    main.jpg: Ocean View
+    a-lanai.jpg: Guest Cottage
     b-lawn.jpg: ""
     c-living.jpg: ""
-    bedroom.jpg: ""
+    bedroom.jpg: Bedroom
     front.jpg: ""
-    dining.jpg: ""
-    rec-hale.jpg: ""
+    dining.jpg: Dining
+    rec-hale.jpg: Gaming Pavilion
   homepage:
     main: main.jpg
     top: a-lanai.jpg

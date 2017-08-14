@@ -6,7 +6,7 @@ images:
     main.jpg: ""
     a-entrance.jpg: ""
     b-courtyard.jpg: ""
-    c-living.jpg: ""
+    c-living.jpg: Living
     back.jpg: ""
     kitchen-dining.jpg: ""
     living.jpg: ""
