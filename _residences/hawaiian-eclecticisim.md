@@ -3,12 +3,23 @@ title: Hawaiian Eclecticism
 images:
   folder: "/img/hawaiian-eclecticism/"
   list:
-    
+    entrance-courtyard.jpg: Entrance Courtyard
+    master-hale-west.jpg: Master Hale West
+    courtyard.jpg: Courtyard
+    master-hale-north.jpg: Master Hale North
+    outdoor-tub-and-trellis.jpg: Outdoor Tub & Trellis
+    koi-pond.jpg: Koi Pond
+    hawaiian-wall.jpg: Hawaiian Wall
+    pool.jpg: Pool
+    rec-hale-screen-wall.jpg: Rec Hale Screen Wall
+    powder-room.jpg: Powder Room
+    kitchen.jpg: Kitchen
+    living-room.jpg: Living Room
   homepage:
-    main: 
-    top: 
-    left: 
-    right: 
+    main: entrance-courtyard.jpg
+    top: master-hale-north.jpg
+    left: outdoor-tub-and-trellis.jpg
+    right: living-room.jpg
 ---
 ## Hawaiian Eclecticism
 
