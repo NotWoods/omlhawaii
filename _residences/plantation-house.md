@@ -3,12 +3,21 @@ title: Plantation House
 images:
   folder: "/img/plantation-house/"
   list:
-    
+    courtyard-entry.jpg: Courtyard Entry
+    main-hale-lanai.jpg: Main Hale Lanai 
+    pool-and-spa.jpg: Pool and Spa
+    entertainment-center.jpg: Entertainment Center
+    bunk-room.jpg: Bunk Room
+    living-room-and-kitchen.jpg: Living Room & Kitchen 
+    roof-rafters.jpg: Roof Rafters
+    bedroom.jpg: Bedroom
+    bedroom-lanai.jpg: Bedroom Lanai
+    main-hale-and-fire-pit.jpg: Main Hale & Fire Pit
   homepage:
-    main: 
-    top: 
-    left: 
-    right: 
+    main: courtyard-entry.jpg
+    top: pool-and-spa.jpg
+    left: living-room-and-kitchen.jpg
+    right: main-hale-and-fire-pit.jpg
 ---
 ## Plantation House
 
