@@ -12,7 +12,7 @@ tint: 'rgba(46, 60, 85, 0.7)'
 
   ### By Post
   PO Box 6768
-  Kamulea, HI 96743
+  Kamuela, HI 96743
 
   ### By Courier
   The 87 Mile Marker
