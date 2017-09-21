@@ -16,14 +16,13 @@ a {
 	overflow-x: hidden;
 	max-height: calc(100vh - 5.5em);
 	color: white;
-}
 
-.threeD::before,
-.threeD::after {
-	display: block;
-	content: '';
+	&::before, &::after {
+		display: block;
+		content: '';
 
-	height: 10vh;
+		height: 10vh;
+	}
 }
 
 .threeD-floaters {

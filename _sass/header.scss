@@ -7,16 +7,17 @@ $secondary-color: #2e3c55;
 	text-align: center;
 	height: 5.5em;
 	width: 100%;
+
+	&-half {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
+		padding: .25em 1em;
+		flex: 1;
+	}
 }
 
-.site-header-half {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: center;
-	padding: .25em 1em;
-	flex: 1;
-}
 .logo {
 	background: $secondary-color;
 	color: $primary-color;
@@ -56,30 +57,31 @@ $nav-border-height: 1px;
 	border-width: $nav-border-height 0;
 	color: inherit;
 	text-decoration: inherit;
-}
-.nav-link::before, .nav-link::after {
-	content: '';
-	position: absolute;
-	top: -$nav-border-height;
-	left: 0;
 
-	background: $secondary-color;
-	height: $nav-border-height;
-	width: 100%;
-	transform: scaleX(0);
-	transform-origin: 0;
-	transition: transform 0.4s ease;
-}
-.nav-link::after {
-	top: auto;
-	bottom: -$nav-border-height;
-	transform-origin: 100%;
-}
-.nav-link:hover::before, .nav-link:hover::after {
-	transform: scaleX(1);
-}
-.main-nav:hover .nav-link::before, .main-nav:hover .nav-link::after {
-	will-change: transform;
+	&::before, &::after {
+		content: '';
+		position: absolute;
+		top: -$nav-border-height;
+		left: 0;
+
+		background: $secondary-color;
+		height: $nav-border-height;
+		width: 100%;
+		transform: scaleX(0);
+		transform-origin: 0;
+		transition: transform 0.4s ease;
+	}
+	&::after {
+		top: auto;
+		bottom: -$nav-border-height;
+		transform-origin: 100%;
+	}
+	&:hover::before, &:hover::after {
+		transform: scaleX(1);
+	}
+	.main-nav:hover &::before, .main-nav:hover &::after {
+		will-change: transform;
+	}
 }
 
 @media (max-width: 42em) {
@@ -91,9 +93,10 @@ $nav-border-height: 1px;
 		flex-wrap: nowrap;
 
 		font-size: 0.75em;
-	}
-	.logo-img {
-		height: 100%;
-		width: auto;
+
+		&-img {
+			height: 100%;
+			width: auto;
+		}
 	}
 }

@@ -3,18 +3,21 @@
 }
 
 h2 {
-	font-size: 1.5em;
-	font-weight: normal;
 	padding-bottom: 0.5em;
+
+	font: {
+		size: 1.5em;
+		weight: normal;
+	}
 	border-bottom: 1px solid #2E3C55;
 }
 
 dt {
 	margin-top: 0.5em;
-}
 
-dt::after {
-	content: ':'
+	&::after {
+		content: ':';
+	}
 }
 
 dd {
