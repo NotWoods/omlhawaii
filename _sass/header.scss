@@ -87,12 +87,16 @@ $nav-border-height: 1px;
 @media (max-width: 42em) {
 	.site-header {
 		flex-direction: column;
+		
+		height: auto;
 	}
 	.logo {
 		flex: 2;
 		flex-wrap: nowrap;
 
+		height: 4em;
 		font-size: 0.75em;
+		overflow: hidden;
 
 		&-img {
 			height: 100%;
