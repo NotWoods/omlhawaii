@@ -12,22 +12,81 @@ permalink: /index.html
 <body>
 	{% include header.liquid %}
 	<div id="container">
-		<main class="threeD" id="about">
-			{% assign sections = site.about | sort: 'order' %}
-			{% for section in sections %}
-				{% assign slug = section.title | slugify %}
-				{% assign oddclass = '' %}
-				{% assign isodd = forloop.index | modulo:2 %}
-				{% if isodd == 1 %}{% assign oddclass = ' threeD-odd' %}{% endif %}
-				<section id="{{ slug }}" class="project-cover threeD-cover">
-					<img src="{{ section.image }}" class="threeD-hero threeD-pane {{ slug }}-hero">
+		<main class="threeD about" id="about">
+			<header class="hero threeD-cover">
+				<div class="threeD-floaters threeD-fill">
+					<p class="hero-subtitle threeD-float">
+						Specializing in the construction of resort residences
+					</p>
+				</div>
+			</header>
+
+			<section class="see-projects">
+				<a class="see-projects-link" href="/projects">See our projects</a>
+				<img height="160" src="/img/plantation-house/courtyard-entry.jpg" />
+				<img height="160" src="/img/hawaiian-eclecticism/master-hale-west.jpg" />
+				<img height="160" src="/img/res-3/c-studio.jpg" />
+			</section>
+
+			<section class="vision about-text">
+				<div class="about-text-content">
+					{% capture vision %}{% include about/vision.md %}{% endcapture %}
+					{{ vision | markdownify }}
+				</div>
+				<div class="about-images">
+					<img src="/img/res-1/c-living.jpg" />
+					<img src="/img/res-1/about-2.jpg" />
+				</div>
+			</section>
+
+			<section class="details about-text">
+				<div class="about-text-content">
+					{% capture details %}{% include about/details.md %}{% endcapture %}
+					{{ details | markdownify }}
+				</div>
+				<div class="about-images">
+					<img src="/img/plantation-house/courtyard-entry.jpg" />
+				</div>
+			</section>
+
+			<section class="experience-integrity">
+				<h2 class="threeD-header">Experience Integrity</h2>
+				{% assign sections = site.about | sort: 'order' %}
+				{% for section in sections %}
+					{% assign slug = section.title | slugify %}
+					{% assign oddclass = '' %}
+					{% assign isodd = forloop.index | modulo:2 %}
+					{% if isodd == 1 %}{% assign oddclass = ' threeD-odd' %}{% endif %}
+					<div id="{{ slug }}" class="project-cover threeD-cover">
+						<img src="{{ section.image }}" class="threeD-hero threeD-pane {{ slug }}-hero">
+						<div class="threeD-text-container threeD-floaters threeD-pane">
+							<div class="threeD-text text {{ slug }}-text{{ oddclass }}" style="background:{{ section.tint }}">
+								{{ section.content }}
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+			</section>
+
+			<section class="advantages about-text">
+				<div class="about-text-content">
+					{% capture advantages %}{% include about/advantages.md %}{% endcapture %}
+					{{ advantages | markdownify }}
+				</div>
+			</section>
+
+			<section class="contact">
+				<div id="contact" class="project-cover threeD-cover">
+					<img src="https://maps.googleapis.com/maps/api/staticmap?markers=color:0x2E3C55|19.809012,-155.991370&size=640x640&zoom=14" class="threeD-hero threeD-pane contact-hero">
 					<div class="threeD-text-container threeD-floaters threeD-pane">
-						<div class="threeD-text text {{ slug }}-text{{ oddclass }}" style="background:{{ section.tint }}">
+						<div class="threeD-text text contact-text" style="background:rgba(46, 60, 85, 0.9)">
+							{% capture contact %}{% include about/contact.md %}{% endcapture %}
+							{{ contact | markdownify }}
 							{{ section.content }}
 						</div>
 					</div>
-				</section>
-			{% endfor %}
+				</div>
+			</section>
 		</main>
 	</div>
 </body>

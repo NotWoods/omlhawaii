@@ -1,7 +1,7 @@
 ---
 order: 6
 image: /img/res-1/about-4.jpg
-tint: 'rgba(107, 92, 97, 0.7)'
+tint: 'rgba(107, 92, 97, 0.9)'
 ---
 
 # We honor your patronage

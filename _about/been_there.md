@@ -1,7 +1,7 @@
 ---
 order: 5
 image: /img/res-1/about-5.jpg
-tint: 'rgba(151, 152, 88, 0.7)'
+tint: 'rgba(151, 152, 88, 0.9)'
 ---
 
 # We've been there

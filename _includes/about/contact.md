@@ -1,9 +1,3 @@
----
-order: 7
-image: 'https://maps.googleapis.com/maps/api/staticmap?markers=color:0x2E3C55|19.809012,-155.991370&size=640x640&zoom=14'
-tint: 'rgba(46, 60, 85, 0.7)'
----
-
 # Contact
 
 * <span class='contact-header'>

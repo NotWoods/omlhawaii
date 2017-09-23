@@ -1,7 +1,7 @@
 ---
 order: 4
 image: /img/res-3/about-3.jpg
-tint: 'rgba(60, 72, 105, 0.7)'
+tint: 'rgba(60, 72, 105, 0.9)'
 ---
 
 # We have the experience
