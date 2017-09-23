@@ -4,6 +4,11 @@
 	overflow: hidden;
 }
 
+.project-details {
+	padding: 1rem;
+	overflow-y: auto;
+}
+
 @media (min-width: 35em) {
 	.project-container {
 		position: relative;
@@ -11,10 +16,11 @@
 
 	.project-details {
 		width: 10rem;
-		padding: 1rem;
+
 		position: absolute;
 		right: 0;
-		top: 1rem;
+		top: 0;
+		max-height: calc(100% - 2rem)
 	}
 
 	.gallery {
@@ -29,9 +35,6 @@
 	}
 
 	.project-details {
-		padding: 1em;
-		padding-top: 0.25em;
-
-		overflow-y: auto;
+		padding-top: 0.25rem;
 	}
 }

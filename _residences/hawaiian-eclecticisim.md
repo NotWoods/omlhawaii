@@ -3,8 +3,8 @@ title: Hawaiian Eclecticism
 images:
   folder: "/img/hawaiian-eclecticism/"
   list:
-    entrance-courtyard.jpg: Entrance Courtyard
     master-hale-west.jpg: Master Hale West
+    entrance-courtyard.jpg: Entrance Courtyard
     courtyard.jpg: Courtyard
     master-hale-north.jpg: Master Hale North
     outdoor-tub-and-trellis.jpg: Outdoor Tub & Trellis
@@ -16,8 +16,8 @@ images:
     kitchen.jpg: Kitchen
     living-room.jpg: Living Room
   homepage:
-    main: entrance-courtyard.jpg
-    top: master-hale-north.jpg
+    main: master-hale-west.jpg
+    top: entrance-courtyard.jpg
     left: outdoor-tub-and-trellis.jpg
     right: living-room.jpg
 ---
