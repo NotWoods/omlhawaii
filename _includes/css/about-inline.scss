@@ -1,0 +1,36 @@
+@import "base";
+@import "header";
+
+// about.scss
+
+.hero {
+	height: 25em;
+	background-color: #bfdeee;
+}
+.about::before {
+	content: none;
+}
+.about::after {
+	height: 20vh;
+}
+
+.see-projects {
+	display: flex;
+	height: 10rem;
+	align-items: stretch;
+
+	&-link {
+		flex: 1;
+		background: #2e3c55;
+	}
+}
+
+.about-text {
+	margin: 1em;
+
+	h2 {
+		margin-top: 1rem;
+		display: inline-block;
+	}
+}
+

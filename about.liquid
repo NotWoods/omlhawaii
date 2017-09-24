@@ -7,7 +7,7 @@ permalink: /index.html
 <head>
 	{% include head.liquid %}
 	<title>About | {{ site.title }}</title>
-	{% include loadCSS.liquid %}
+	{% include loadCSS.liquid inline="css/about-inline.scss" %}
 </head>
 <body>
 	{% include header.liquid %}
@@ -29,24 +29,13 @@ permalink: /index.html
 			</section>
 
 			<section class="vision about-text">
-				<div class="about-text-content">
-					{% capture vision %}{% include about/vision.md %}{% endcapture %}
-					{{ vision | markdownify }}
-				</div>
-				<div class="about-images">
-					<img src="/img/res-1/c-living.jpg" />
-					<img src="/img/res-1/about-2.jpg" />
-				</div>
+				{% capture vision %}{% include about/vision.md %}{% endcapture %}
+				{{ vision | markdownify }}
 			</section>
 
 			<section class="details about-text">
-				<div class="about-text-content">
-					{% capture details %}{% include about/details.md %}{% endcapture %}
-					{{ details | markdownify }}
-				</div>
-				<div class="about-images">
-					<img src="/img/plantation-house/courtyard-entry.jpg" />
-				</div>
+				{% capture details %}{% include about/details.md %}{% endcapture %}
+				{{ details | markdownify }}
 			</section>
 
 			<section class="experience-integrity">

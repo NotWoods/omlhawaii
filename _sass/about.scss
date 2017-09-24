@@ -56,15 +56,7 @@ blockquote {
 
 /*****************************/
 
-.about::before {
-	content: none;
-}
-.about::after {
-	height: 20vh;
-}
-
 .hero {
-	height: 25em;
 	position: relative;
 
 	background: url('/img/hero.png') {
@@ -85,50 +77,18 @@ blockquote {
 	}
 }
 
-.see-projects {
+.see-projects-link {
+	padding: 1em;
 	display: flex;
-	height: 10rem;
+	justify-content: center;
+	align-items: center;
 
-	&-link {
-		flex: 1;
-		padding: 1em;
-		height: calc(100% - 2em);
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	font-size: 1.3em;
+	background: #2e3c55;
+	color: white;
 
-		font-size: 1.3em;
-		background: #2e3c55;
-		color: white;
-
-		&:hover {
-			text-decoration: underline;
-		}
-	}
-}
-
-.about-text {
-	margin: 1em;
-	margin-right: 2em;
-	position: relative;
-	padding-right: 30%;
-
-	h2 {
-		margin-top: 1rem;
-		display: inline-block;
-	}
-}
-
-.about-images {
-	overflow: hidden;
-	height: calc(100% - 1rem);
-	position: absolute;
-	right: 0;
-	top: 1rem;
-	width: 30%;
-
-	img {
-		max-width: 100%;
+	&:hover {
+		text-decoration: underline;
 	}
 }
 
@@ -141,4 +101,9 @@ blockquote {
 }
 .threeD-cover {
 	height: 25rem;
+}
+
+.advantages {
+	// patronage card shows underneath text otherwise
+	z-index: -1;
 }
