@@ -62,6 +62,7 @@ blockquote {
 	background: url('/img/hero.png') {
 		size: cover;
 		position: center;
+		color: #bfdeee;
 	};
 
 	&-subtitle {
@@ -92,15 +93,18 @@ blockquote {
 	}
 }
 
-.threeD-header {
+.about .threeD-header {
 	margin-left: 1rem;
 	display: inline-block;
 }
-.threeD-hero {
+.about .threeD-hero {
 	max-height: 22rem;
 }
-.threeD-cover {
+.about .threeD-cover {
 	height: 25rem;
+}
+.about .threeD-odd {
+	top: 5em;
 }
 
 .advantages {
