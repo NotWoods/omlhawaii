@@ -10,7 +10,6 @@ $secondary-color: #2e3c55;
 
 	&-half {
 		display: flex;
-		flex-flow: row wrap;
 		justify-content: center;
 		align-items: center;
 		padding: .25em 1em;
@@ -87,7 +86,7 @@ $nav-border-height: 1px;
 @media (max-width: 42em) {
 	.site-header {
 		flex-direction: column;
-		
+
 		height: auto;
 	}
 	.logo {

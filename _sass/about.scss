@@ -37,15 +37,20 @@ h3 + p {
 	margin-top: 0;
 }
 
-li {
-	display: block;
-}
-
 .contact-header {
 	float: left;
 	width: 1.5em;
 	margin-left: -2em;
 	overflow-x: hidden;
+}
+
+.detail-images {
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.detail-image {
+	margin: 0 0.5em;
 }
 
 /*****************************/

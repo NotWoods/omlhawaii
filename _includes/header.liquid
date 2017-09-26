@@ -3,12 +3,12 @@
 		<img class="logo-img" src="/img/logo/logo.svg" width="80" height="80" alt="">
 		<div class="company-name">
 			<h1 class="company-title">{{ site.title }}</h1>
-			<span class="company-subtitle">Building Contractor</span>
+			<span class="company-subtitle">{{ site.subtitle }}</span>
 		</div>
 	</a>
 	<nav class="site-header-half main-nav">
-		<a class="nav-link" href="/projects">Work</a>
-		<a class="nav-link" href="/#vision">About</a>
-		<a class="nav-link" href="/#contact">Contact</a>
+		{% for link in site.data.nav %}
+			<a class="nav-link" href="{{ link.href }}">{{ link.text }}</a>
+		{% endfor %}
 	</nav>
 </header>

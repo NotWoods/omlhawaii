@@ -22,10 +22,10 @@ permalink: /index.html
 			</header>
 
 			<section class="see-projects">
-				<a class="see-projects-link" href="/projects">See our projects</a>
-				<img height="160" src="/img/plantation-house/courtyard-entry.jpg" />
-				<img height="160" src="/img/hawaiian-eclecticism/master-hale-west.jpg" />
-				<img height="160" src="/img/res-3/c-studio.jpg" />
+				<a class="see-projects-link" href="/projects">{{ site.data.see-projects.text }}</a>
+				{% for image in site.data.see-projects.images %}
+					<img height="160" src="{{ image }}" />
+				{% endfor %}
 			</section>
 
 			<section class="vision about-text">
@@ -36,6 +36,11 @@ permalink: /index.html
 			<section class="details about-text">
 				{% capture details %}{% include about/details.md %}{% endcapture %}
 				{{ details | markdownify }}
+				<div class="detail-images">
+					{% for image in site.data.details %}
+						<img class="detail-image" height="160" src="{{ image.src }}" alt="{{ image.alt }}" />
+					{% endfor %}
+				</div>
 			</section>
 
 			<section class="experience-integrity">
