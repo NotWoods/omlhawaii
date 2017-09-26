@@ -32,6 +32,26 @@
 	}
 }
 
+.arrow-back {
+	z-index: 1;
+	bottom: auto;
+	will-change: transform;
+	transition: transform 0.5s ease;
+
+	&-icon {
+		position: absolute;
+
+		text-align: center;
+		font-size: 3em;
+		line-height: 0.8em;
+		width: 100%;
+	}
+
+	&:hover {
+		transform: rotateZ(360deg);
+	}
+}
+
 .arrow-lines {
 	$angle: 30deg;
 	$offset: 1.05em;

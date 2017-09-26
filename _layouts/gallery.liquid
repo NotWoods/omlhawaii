@@ -12,6 +12,10 @@ layout: compress
   <body>
     {% include header.liquid %}
     <article id="project-page" class="project-container">
+			<a class="arrow arrow-back arrow-enabled" href="{{ site.data.nav[0].href }}">
+				<span class="arrow-back-icon">«</span>
+			</a>
+
 			<section class="gallery">
 				{% for image in page.images.list %}
 					{% comment %}

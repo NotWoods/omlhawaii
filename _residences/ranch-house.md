@@ -11,6 +11,7 @@ images:
     front.jpg: ""
     dining.jpg: Dining
     rec-hale.jpg: Gaming Pavilion
+    kitchen-courtyard.jpg: Kitchen Courtyard
   homepage:
     main: main.jpg
     top: a-lanai.jpg
