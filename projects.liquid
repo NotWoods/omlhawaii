@@ -1,44 +1,17 @@
 ---
-layout: compress
+layout: threeD
 permalink: /projects/index.html
+title: Work
 ---
-<!doctype html>
-<html>
-<head>
-	{% include head.liquid %}
-	<title>Work | {{ site.title }}</title>
-	{% include loadCSS.liquid %}
-</head>
-<body>
-	{% include header.liquid %}
-	<div id="container">
-		<main class="threeD">
-			{% for res in site.residences %}
-				{% include utils/residence_vars.liquid residence=res %}
-				{% assign homeimg = res.images.homepage %}
-				<section class="threeD-cover" id="{{ slug }}">
-					<img src="{{ homeimg.main | prepend: folder }}" class="threeD-pane threeD-hero">
-					<!--<h1 class="threeD-pane threeD-label">{{ res.title }}</h1>-->
-					<a class="threeD-pane threeD-floaters" href="{{ res.url }}">
-						<img src="{{ homeimg.top | prepend: folder }}" class="threeD-float threeD-top">
-						<img src="{{ homeimg.left | prepend: folder }}" class="threeD-float threeD-left">
-						<img src="{{ homeimg.right | prepend: folder }}" class="threeD-float threeD-right">
-					</a>
-				</section>
-			{% endfor %}
-		 	<!--<section class="project-cover" id="commercial">
-				<div class="main-img">
-					<img src="commercial/kaupulehu/main.jpg">
-					<img src="commercial/kukio-golf/main.jpg">
-					<img src="commercial/hilton/pool.png">
-				</div>
-				<a class="background" href="commercial">
-					<img src="commercial/dredging/two.png" class="background-img">
-					<img src="commercial/hapuna/main.png" class="background-img" style="left:20px">
-					<img src="commercial/koolina-villa/bath.png" class="background-img">
-				</a>
-			</section>-->
-		</main>
-	</div>
-</body>
-</html>
+{% for res in site.residences %}
+	{% include utils/residence_vars.liquid residence=res %}
+	{% assign homeimg = res.images.homepage %}
+	<section class="threeD-cover" id="{{ slug }}">
+		<img src="{{ homeimg.main | prepend: folder }}" class="threeD-pane threeD-hero">
+		<a class="threeD-pane threeD-floaters" href="{{ res.url }}">
+			<img src="{{ homeimg.top | prepend: folder }}" class="threeD-float threeD-top">
+			<img src="{{ homeimg.left | prepend: folder }}" class="threeD-float threeD-left">
+			<img src="{{ homeimg.right | prepend: folder }}" class="threeD-float threeD-right">
+		</a>
+	</section>
+{% endfor %}

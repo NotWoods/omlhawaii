@@ -1,0 +1,19 @@
+---
+layout: compress
+---
+<!doctype html>
+<html>
+<head>
+	{% include head.liquid %}
+	<title>{{ page.title }} | {{ site.title }}</title>
+	{% include loadCSS.liquid inline=page.inline-css %}
+</head>
+<body>
+	{% include header.liquid %}
+	<div id="container">
+		<main class="{{ page.class | unshift: 'threeD' | join: ' ' }}">
+			{{ content }}
+		</main>
+	</div>
+</body>
+</html>

@@ -71,12 +71,11 @@ blockquote {
 	};
 
 	&-subtitle {
-		margin: 0;
 		padding: 1em;
 		max-width: 9em;
 		position: absolute;
-		right: 0;
-		bottom: 0;
+		right: -1rem;
+		bottom: -1rem;
 
 		background: rgba(65, 98, 159, 0.8);
 		color: white;
