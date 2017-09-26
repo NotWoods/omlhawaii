@@ -15,8 +15,8 @@ inline-css: css/about-inline.scss
 </header>
 
 <section class="see-projects">
-	<a class="see-projects-link" href="/projects">{{ site.data.see-projects.text }}</a>
-	{% for image in site.data.see-projects.images %}
+	<a class="see-projects-link" href="/projects">See our projects</a>
+	{% for image in site.data.see-projects %}
 		<img height="160" src="{{ image }}" />
 	{% endfor %}
 </section>
@@ -69,13 +69,15 @@ precision, strength, and creativity.
 	{% assign sections = site.about | sort: 'order' %}
 	{% for section in sections %}
 		{% assign slug = section.title | slugify %}
-		{% assign oddclass = '' %}
+		{% assign classes = 'threeD-text text' | split: ' ' %}
 		{% assign isodd = forloop.index | modulo:2 %}
-		{% if isodd == 1 %}{% assign oddclass = ' threeD-odd' %}{% endif %}
+		{% if isodd == 1 %}
+			{% assign classes = classes | push: 'threeD-odd' %}
+		{% endif %}
 		<div id="{{ slug }}" class="project-cover threeD-cover">
 			<img src="{{ section.image }}" class="threeD-hero threeD-pane {{ slug }}-hero">
 			<div class="threeD-text-container threeD-floaters threeD-pane">
-				<div class="threeD-text text {{ slug }}-text{{ oddclass }}" style="background:{{ section.tint }}">
+				<div class="{{ classes | join: ' ' }}" style="background:{{ section.tint }}">
 					{{ section.content }}
 				</div>
 			</div>
