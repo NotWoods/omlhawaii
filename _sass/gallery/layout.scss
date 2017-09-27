@@ -4,16 +4,16 @@
 	overflow: hidden;
 }
 
+.project-container {
+	position: relative;
+}
+
 .project-details {
 	padding: 1rem;
 	overflow-y: auto;
 }
 
 @media (min-width: 35em) {
-	.project-container {
-		position: relative;
-	}
-
 	.project-details {
 		width: 10rem;
 
