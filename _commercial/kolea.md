@@ -3,6 +3,10 @@ title: Kolea Kai
 images:
   folder: "kolea/"
   list:
+    a.jpg: ""
+    b.jpg: ""
+    c.jpg: ""
+    d.jpg: ""
     main.jpg: ""
 ---
 ### Project Scope

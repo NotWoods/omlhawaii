@@ -90,14 +90,12 @@ precision, strength, and creativity.
 1. We have managed several projects between $50 million to 
 	 $191 million. We know how to
    minimize the Owner’s exposure due to problems in administration.
-2. We have over 45 years of experience. We know how to minimize the Owner’s exposure to
+2. We have over 50 years of experience. We know how to minimize the Owner’s exposure to
    construction defects.
 3. We have an excellent record in controlling costs and budgets and maintaining schedules.
 4. We have an excellent reputation for value engineering which provides our Clients the options
    for savings
-5. Our office provides engineering and architectural support to the jobs in administration and
-   construction details. Our support person has a Master Degree in Architecture, 10 years
-   experience working in architecture, and 15 years working in construction.
+5. We know concrete; we have managed a precast concrete plant.
 6. We have an ABC license versus a BC license unlike most of our competitors. An ABC license
    certifies the General Contractor is legally authorized and qualified to perform Building,
    Engineering, and Site Work Construction.
@@ -109,6 +107,15 @@ precision, strength, and creativity.
    Contractors require the Subcontractors to layout their own work which often leads to substandard
    tolerances.
 10. We check and monitor the Subcontractors’ work to insure the work is performed properly.
+
+## Our Team
+<section class="team">
+	{% for bio in site.bios %}
+		<div class="bio">
+			{{ bio.content }}
+		</div>
+	{% endfor %}
+</section>
 
 <section class="contact">
 	<div id="contact" class="project-cover threeD-cover">

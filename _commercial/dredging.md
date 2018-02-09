@@ -1,5 +1,5 @@
 ---
-title: HDCC Housing Division
+title: Dillingham Housing Division
 images:
   folder: "dredging/"
   list:
@@ -8,11 +8,9 @@ images:
     two.png: ""
     three.png: ""
 ---
-Under the leadership of Garrette Oakes, 
-HDCC Housing Division constructed over $120 million in a 5 year period. 
-Projects included 697 single family homes and condominiums located in 
-Oahu, Maui, and Kauai. 
-Building designs ranged from low cost to high-end luxury units.
+Under the leadership Of Garrette Oakes, 
+Dillingham Housing Division constructed 133 Luxury Homes and Condominiums, 
+and 564 Subdivision Homes located in Oahu, Maui, and Kauai.
 
 ___
 

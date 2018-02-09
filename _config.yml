@@ -22,6 +22,7 @@ collections:
     output: true
     permalink: /gallery/:title/
   commercial:
+  bios:
   about:
 
 sass:

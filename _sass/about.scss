@@ -13,6 +13,10 @@
 	left: -1.25em;
 
 	color: white;
+
+	li {
+		display: block;
+	}
 }
 
 .threeD-odd {
@@ -110,11 +114,25 @@ blockquote {
 .about .threeD-odd {
 	top: 5em;
 }
-.experience-integrity {
+.experience-integrity, .contact {
 	transform-style: preserve-3d;
 }
 
 .advantages {
 	// patronage card shows underneath text otherwise
 	z-index: -1;
+}
+
+.team {
+	display: flex;
+}
+.bio {
+	flex: 1;
+	margin: 0 2em;
+}
+
+@media (max-width: 900px) {
+	.team {
+		flex-direction: column;
+	}
 }
