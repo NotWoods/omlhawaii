@@ -110,6 +110,9 @@ blockquote {
 .about .threeD-odd {
 	top: 5em;
 }
+.experience-integrity {
+	transform-style: preserve-3d;
+}
 
 .advantages {
 	// patronage card shows underneath text otherwise

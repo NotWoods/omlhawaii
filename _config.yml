@@ -13,7 +13,7 @@ url: "http://omlhawaii.com"
 markdown: kramdown
 kramdown:
   input: GFM
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-titles-from-headings
 

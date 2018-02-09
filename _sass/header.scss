@@ -3,6 +3,8 @@ $secondary-color: #2e3c55;
 
 .site-header {
 	display: flex;
+	position: relative;
+	z-index: 1;
 
 	text-align: center;
 	height: 5.5em;
