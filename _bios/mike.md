@@ -1,5 +1,6 @@
 ---
 title: Mike Reed
+hero: "/img/bio-mike.jpg"
 ---
 **MIKE REED**, Project Director who
 oversees our jobs. He has over 45 years

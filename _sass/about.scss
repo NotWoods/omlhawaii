@@ -129,6 +129,13 @@ blockquote {
 .bio {
 	flex: 1;
 	margin: 0 2em;
+
+	&-image {
+		display: block;
+		max-height: 200px;
+		max-width: 100%;
+		margin: auto;
+	}
 }
 
 @media (max-width: 900px) {

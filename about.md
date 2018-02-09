@@ -112,6 +112,7 @@ precision, strength, and creativity.
 <section class="team">
 	{% for bio in site.bios %}
 		<div class="bio">
+			<img class="bio-image" src="{{ bio.hero }}" alt="">
 			{{ bio.content }}
 		</div>
 	{% endfor %}

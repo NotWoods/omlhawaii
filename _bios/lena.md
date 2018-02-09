@@ -1,5 +1,6 @@
 ---
 title: Lena Oakes
+hero: "/img/bio-lena.jpg"
 ---
 **LENA OAKES**’ fine art, architecture, construction, and business background balances the OML team.
 

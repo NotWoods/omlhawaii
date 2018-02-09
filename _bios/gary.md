@@ -1,5 +1,6 @@
 ---
 title: Garrette Oakes
+hero: "/img/bio-gary.jpg"
 ---
 **GARRETTE OAKES**’ 50 years of
 construction background is extensive and
