@@ -1,5 +1,6 @@
 ---
 layout: compress
+title: Commercial Work
 ---
 <html>
 <head>
@@ -11,33 +12,6 @@ layout: compress
 			font-family: "Titillium Web", sans-serif;
 		}
 
-		#main-header {
-			width: 100vw;
-			position: absolute;
-			top: 0;
-			left: 0;
-			height: 88px
-		}
-
-		#main-header::before,
-		#main-header::after {
-			content: "";
-			background: #2E3C55;
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			right: 50%;
-			left: 0
-		}
-
-		#main-header::after {
-			background: #dcb869;
-			right: 0;
-			left: 50%
-		}
-
-		#logo,
-		#main-nav,
 		.background,
 		aside,
 		.arrow,
@@ -45,10 +19,8 @@ layout: compress
 			display: none
 		}
 
-		#com-head {
-			margin-top: 96px;
+		.commercial-head {
 			text-align: center;
-			font-weight: 300
 		}
 
 		.slider-wrapper .gallery {
@@ -59,171 +31,37 @@ layout: compress
 			vertical-align: top
 		}
 
-		.gallery img {
-			height: 100%
-		}
-
-		.slider {
-			width: 3000px
-		}
-
-		.slider-wrapper {
-			overflow-x: hidden;
-			width: 100vw
-		}
+		.gallery img { height: 100% }
+		.slider { width: 3000px }
+		.slider-wrapper { overflow-x: hidden }
 	</style>
-	{% include loadCSS.liquid %}
-	<script async src="slider.js"></script>
+	{% include head.liquid %}
+	<title>{{ page.title }} | {{ site.title }}</title>
+	{% include loadCSS.liquid path="/css/commercial.css" inline="css/none.scss" %}
+	<script defer async src="slider.js"></script>
 </head>
 <body>
 	{% include header.liquid %}
-	<h1 id="com-head">Commercial Projects</h1>
-	<section id="kaupulehu" class="project-slider">
-		<h1 class="name">Ka'upulehu Beach Club</h1>
-		<div class="slider-wrapper">
-			<div class="slider">
-				<figure class="gallery"><img src="kaupulehu/bar.jpg"></figure>
-				<figure class="gallery"><img src="kaupulehu/dining.png"></figure>
-				<figure class="gallery"><img src="kaupulehu/main.jpg"></figure>
-				<figure class="gallery"><img src="kaupulehu/pool.png"></figure>
-			</div>
-			<a class="slide back"></a>
-			<a class="slide next"></a>
-		</div>
-		<div class="description">
-			<div>
-				<span class="label">Kuki'o Construction and Development Manager</span>
-				<p>Garrette Oakes</p>
-			</div>
-			<div>
-				<span class="label">Architect</span>
-				<p>de Reus Architects</p>
-			</div>
-			<div class="award">
-				<span class="label">2009 American Institute of Architecture Award of Merit</span>
-				<q>The design works a balance between nature and pragmatic requirements.</q>
-				<span class="cite">2009 AIA Juror's Comments</span>
-			</div>
-		</div>
-	</section>
-	<section id="kukio-golf" class="project-slider">
-		<h1 class="name">Kukio Golf Club</h1>
-		<div class="slider-wrapper">
-			<div class="slider">
-				<figure class="gallery"><img src="kukio-golf/bar.jpg"></figure>
-				<figure class="gallery"><img src="kukio-golf/course.jpg"></figure>
-				<figure class="gallery"><img src="kukio-golf/dining.jpg"></figure>
-				<figure class="gallery"><img src="kukio-golf/entry.png"></figure>
-				<figure class="gallery"><img src="kukio-golf/locker.png"></figure>
-				<figure class="gallery"><img src="kukio-golf/main.jpg"></figure>
-			</div>
-			<a class="slide back"></a>
-			<a class="slide next"></a>
-		</div>
-		<div class="description">
-			<div>
-				<span class="label">Kuki'o Construction and Development Manager</span>
-				<p>Garrette Oakes</p>
-			</div>
-			<div>
-				<span class="label">Architect</span>
-				<p>de Reus Architects</p>
-			</div>
-			<div class="award label">2008 American Institute of Architecture Award of Excellence</div>
-		</div>
-	</section>
-	<section id="hapuna" class="project-slider">
-		<h1 class="name">Hapuna Beach Prince</h1>
-		<div class="slider-wrapper">
-			<div class="slider">
-				<figure class="gallery"><img src="hapuna/grill.png"></figure>
-				<figure class="gallery"><img src="hapuna/lobby.png"></figure>
-				<figure class="gallery"><img src="hapuna/pool.png"></figure>
-				<figure class="gallery"><img src="hapuna/main.png"></figure>
-				<figure class="gallery full"><img src="hapuna/beach.jpg"></figure>
-			</div><a class="slide back"></a><a class="slide next"></a></div>
-		<div class="description">
-			<div><span class="label">Senior Project Manager</span>
-				<p>Garrette Oakes</p>
-			</div>
-			<div class="award"><span class="label">Project Scope</span>
-				<p>$147 Million 350 Room Luxury Hotel</p>
-			</div>
-		</div>
-	</section>
-	<section id="hilton" class="project-slider">
-		<h1 class="name">Hyatt Regency Waikoloa</h1>
-		<div class="slider-wrapper">
-			<div class="slider">
-				<figure class="gallery"><img src="hilton/overhead.jpg"></figure>
-				<figure class="gallery"><img src="hilton/dolphin.png"></figure>
-				<figure class="gallery"><img src="hilton/lobby.png"></figure>
-				<figure class="gallery"><img src="hilton/cave-pool.png"></figure>
-				<figure class="gallery wide"><img src="hilton/pool.png"></figure>
-				<figure class="gallery thin"><img src="hilton/wedding.png"></figure>
-			</div><a class="slide back"></a><a class="slide next"></a></div>
-		<div class="description">
-			<div><span class="label">Senior Project Manager</span>
-				<p>Garrette Oakes</p>
-			</div>
-			<div class="award"><span class="label">Project Scope</span>
-				<p>$193 Million Hotel and Entertainment Park</p>
-			</div>
-		</div>
-	</section>
-	<section id="kolea" class="project-slider">
-		<h1 class="name">Kolea Kai</h1>
-		<div class="slider-wrapper">
-			<div class="slider">
-				<figure class="gallery"><img src="kolea/main.jpg"></figure>
+	<h1 class="commercial-head">Commercial Projects</h1>
+	{% for project in site.commercial %}
+		<section class="project-slider">
+			<h1 class="name">{{ project.title }}</h1>
+			<div class="slider-wrapper">
+				<div class="slider">
+					{% assign folder = project.images.folder %}
+					{% for image in project.images.list %}
+						<figure class="gallery">
+							<img src="{{ image[0] | prepend: folder }}">
+						</figure>
+					{% endfor %}
+				</div>
+				<a class="slide back"></a>
+				<a class="slide next"></a>
 			</div>
 			<div class="description">
-				<div><span class="label">Vice President of Construction</span>
-					<p>Garrette Oakes</p>
-				</div>
-				<div class="award"><span class="label">Project Scope</span>
-					<p>126 unit, High-End Luxury Condominium. Over $70 million dollars of construction.</p>
-				</div>
+				{{ project.content }}
 			</div>
-	</section>
-	<section id="koolina-villa" class="project-slider">
-		<h1 class="name">Ko Olina Kai Beach Villa</h1>
-		<div class="slider-wrapper">
-			<div class="slider">
-				<figure class="gallery"><img src="koolina-villa/lagoon-pool.png"></figure>
-				<figure class="gallery"><img src="koolina-villa/entry.png"></figure>
-				<figure class="gallery"><img src="koolina-villa/main.jpg"></figure>
-				<figure class="gallery"><img src="koolina-villa/living.png"></figure>
-				<figure class="gallery"><img src="koolina-villa/bath.png"></figure>
-				<figure class="gallery"><img src="koolina-villa/pool.png"></figure>
-			</div><a class="slide back"></a><a class="slide next"></a></div>
-		<div class="description">
-			<div><span class="label">Vice President of Construction</span>
-				<p>Garrette Oakes</p>
-			</div>
-			<div class="award"><span class="label">Project Scope</span>
-				<p>247 unit, 2 and 3 Bedroom Oceanfront Villas costing $150 million dollars in construction</p>
-			</div>
-		</div>
-	</section>
-	<section id="dredging" class="project-slider">
-		<h1 class="name">HDCC Housing Division</h1>
-		<div class="slider-wrapper">
-			<div class="slider">
-				<figure class="gallery wide"><img src="dredging/one.jpg"></figure>
-				<figure class="gallery"><img src="dredging/two.png"></figure>
-				<figure class="gallery"><img src="dredging/three.png"></figure>
-			</div><a class="slide back"></a><a class="slide next"></a></div>
-		<div class="description">
-			<div><span class="label">Division Manager</span>
-				<p>Garrette Oakes</p>
-			</div>
-			<div class="award">
-				<p>Under the leadership of Garrette Oakes, HDCC Housing Division constructed over $120 million in a 5 year period. Projects
-					included 697 single family homes and condominiums located in Oahu, Maui, and Kauai. Building designs ranged from low
-					cost to high-end luxury units.</p>
-			</div>
-		</div>
-	</section>
+		</section>
+	{% endfor %}
 </body>
 </html>

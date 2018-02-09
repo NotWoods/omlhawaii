@@ -5,31 +5,36 @@ function sliderSetup() {
 	}
 }
 
-function slide() {
-	var slider = this.parentNode.firstChild,
-		slideWidth = 0;
+const currentSlides = new WeakMap();
+
+/**
+ * Called on slide button click
+ * @param {Event} e
+ */
+function slide(e) {
+	/** @type {HTMLElement} */
+	var sliderWrapper = e.target;
+	var slider = sliderWrapper.parentElement.firstElementChild;
+
+	var slideWidth = 0;
 	for (var i = 0; i < slider.children.length; i++) {
 		slideWidth += slider.children[i].offsetWidth;
 	}
-	var slides = Math.ceil(slideWidth / window.innerWidth),
-		currentSlide = slider.getAttribute("data-current") || slider.currentSlide;
-	if (!currentSlide) currentSlide = 0;
-	
-	console.log(this.className);
-	
+	var slides = Math.ceil(slideWidth / window.innerWidth);
+	var currentSlide = currentSlides.get(slider) || slider.getAttribute("data-current") || 0;
+
+	var slideIndex;
 	if ((this.className.indexOf("back") > -1) && currentSlide > 0) {
-		slider.setAttribute("style", "transform:translateX(-"+ (currentSlide - 1) +"00vw)")
-		slider.currentSlide = currentSlide - 1;
-		slider.setAttribute("data-current", currentSlide - 1)
+		slideIndex = currentSlide - 1;
 	} else if ((this.className.indexOf("next") > -1) && currentSlide < slides - 1) {
-		slider.setAttribute("style", "transform:translateX(-"+ (currentSlide + 1) +"00vw)")
-		slider.currentSlide = currentSlide + 1;
-		slider.setAttribute("data-current", currentSlide + 1)
+		slideIndex = currentSlide + 1;
+	}
+
+	if (slideIndex != null) {
+		slider.setAttribute("style", "transform:translateX(-" + slideIndex + "00vw)")
+		currentSlides.set(slider, slideIndex);
+		slider.setAttribute("data-current", slideIndex)
 	}
 }
 
-if (document.body.readyState == "interactive" || document.body.readyState == "complete") {
-	sliderSetup();
-} else {
-	document.body.onload = sliderSetup;
-}
+sliderSetup();

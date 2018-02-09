@@ -21,6 +21,7 @@ collections:
   residences:
     output: true
     permalink: /gallery/:title/
+  commercial:
   about:
 
 sass:
