@@ -8,7 +8,7 @@ encompasses numerous projects, several of
 which are between $50 and $191 million.
 
 ### LICENSES AND EDUCATION:
-* Civil Engineer, PE
+* Civil Engineer, CE
 * Structural Engineer, SE
 * General Contractor, ABC (highest level)
 * Additional degree in Management Science, Marketing, and Finance.
