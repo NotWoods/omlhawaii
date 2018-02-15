@@ -9,19 +9,18 @@
   Kamuela, HI 96743
 
   ### By Courier
-  The 87 Mile Marker
-  Queen Kaahumanu Hwy
-  Kailua-Kona, HI 96740
+  56-758 Kualapa Place
+  Hawi, HI 97819
 
 * <span class='contact-header'>
     ![Phone Numbers](/img/contact/phone.svg)
   </span>
 
-  ### Phone
+  ### Cell
   (808) 345-6693
 
-  ### Fax
-  (808) 325-2511
+  ### Office
+  (808) 885-9889
 
 * <span class='contact-header'>
     ![Email](/img/contact/email.svg)
