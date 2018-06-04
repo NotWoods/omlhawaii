@@ -5,7 +5,7 @@ hero: "/img/bio-gary.jpg"
 **GARRETTE OAKES**’ 50 years of
 construction background is extensive and
 encompasses numerous projects, several of
-which are between $50 and $191 million
+which are between $50 and $191 million.
 
 ### LICENSES, EDUCATION & ASSOCIATION:
 * Civil Engineer, CE
