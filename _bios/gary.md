@@ -27,7 +27,8 @@ which are between $50 and $191 million.
 ### CONSTRUCTION PORTFOLIO IN KUKI’O:
 * White Residence
 * Hartman Residence
-* Wai’olu, Hale Loko Wai
+* Wai’olu
+* Hale Loko Wai
 * Johnson Makani Eka Residences
 * Kuki’o Golf Club House
 * Ka’upulehu Beach Club
