@@ -1,4 +1,4 @@
-  ---
+---
 title: Garrette Oakes
 hero: "/img/bio-gary.jpg"
 ---
