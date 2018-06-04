@@ -1,17 +1,20 @@
----
+  ---
 title: Garrette Oakes
 hero: "/img/bio-gary.jpg"
 ---
 **GARRETTE OAKES**’ 50 years of
 construction background is extensive and
 encompasses numerous projects, several of
-which are between $50 and $191 million.
+which are between $50 and $191 million
 
-### LICENSES AND EDUCATION:
+### LICENSES, EDUCATION & ASSOCIATION:
 * Civil Engineer, CE
 * Structural Engineer, SE
 * General Contractor, ABC (highest level)
-* Additional degree in Management Science, Marketing, and Finance.
+* Bachelor Science, Civil Engineering from Washington State University
+* Additional degree in Management Science, Marketing, and Finance
+* Life Member, Am Society of Civil Engineer Member (& past Secretary) Structural Engineers Association of HI
+* (Past) Technical Committee Chairman of Cement Concrete Products Industry of HI
 
 ### EXECUTIVE POSITIONS:
 * General Contractor of Oakes Management, LLC
@@ -19,7 +22,7 @@ which are between $50 and $191 million.
 * Construction and Development Manager of Hawaii Dredging Construction Co. Housing and Commercial Division
 * Manager of HDCC Precast Concrete Plant
 * Vice President of Construction at Centex Homes
-* Owner’s Construction Manager.
+* Owner’s Construction Manager
 
 ### CONSTRUCTION PORTFOLIO IN KUKI’O:
 * White Residence
