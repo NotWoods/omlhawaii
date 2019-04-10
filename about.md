@@ -120,7 +120,7 @@ precision, strength, and creativity.
 
 <section class="contact">
 	<div id="contact" class="project-cover threeD-cover">
-		<img src="https://maps.googleapis.com/maps/api/staticmap?markers=color:0x2E3C55|19.809012,-155.991370&size=640x640&zoom=14" class="threeD-hero threeD-pane contact-hero">
+		<img src="https://maps.googleapis.com/maps/api/staticmap?markers=color:0x2E3C55|19.809012,-155.991370&size=640x640&zoom=14&key=AIzaSyAxKXGhfhL2-qdDGULRs2_B8CGoeCBnveI" class="threeD-hero threeD-pane contact-hero">
 		<div class="threeD-text-container threeD-floaters threeD-pane">
 			<div class="threeD-text text contact-text" style="background:rgba(46, 60, 85, 0.9)">
 				{% capture contact %}{% include contact.md %}{% endcapture %}
