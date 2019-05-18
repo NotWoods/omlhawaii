@@ -13,14 +13,11 @@
   Hawi, HI 97819
 
 * <span class='contact-header'>
-    ![Phone Numbers](/img/contact/phone.svg)
+    ![Phone Number](/img/contact/phone.svg)
   </span>
 
   ### Cell
   (808) 345-6693
-
-  ### Office
-  (808) 885-9889
 
 * <span class='contact-header'>
     ![Email](/img/contact/email.svg)

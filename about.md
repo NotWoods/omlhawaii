@@ -31,7 +31,7 @@ two-dimensional visions into three-dimensional artistry,
 and to devote our time and means to the creation of
 spatial beauty.
 
-> As described by the visionary architect Frank Lloyd Wright, 
+> As described by the visionary architect Frank Lloyd Wright,
 >
 > "The longer I live the more beautiful life becomes.
 > If you foolishly ignore beauty, you will soon find yourself without it.
@@ -87,14 +87,13 @@ precision, strength, and creativity.
 
 ## Advantages of Contracting with Oakes Management, LLC
 
-1. We have managed several projects between $50 million to 
-	 $191 million. We know how to
+1. We have managed several projects between $10 million to $191 million. We know how to
    minimize the Owner’s exposure due to problems in administration.
 2. We have over 50 years of experience. We know how to minimize the Owner’s exposure to
    construction defects.
 3. We have an excellent record in controlling costs and budgets and maintaining schedules.
-4. We have an excellent reputation for value engineering which provides our Clients the options
-   for savings
+4. We are able to generate Value Engineering Options for the Owner to review for savings
+   considerations.
 5. We know concrete; we have managed a precast concrete plant.
 6. We have an ABC license versus a BC license unlike most of our competitors. An ABC license
    certifies the General Contractor is legally authorized and qualified to perform Building,
