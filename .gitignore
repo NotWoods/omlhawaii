@@ -1,5 +1,8 @@
 _site
 .sass-cache
+.jekyll-cache
+.jeykll-metadata
+Gemfile.lock
 img/coastal-arts-and-crafts/aerials
 img/coastal-arts-and-crafts/ext
 img/coastal-arts-and-crafts/int

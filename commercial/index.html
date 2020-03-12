@@ -45,14 +45,12 @@ title: Commercial Work
 	<h1 class="commercial-head">Commercial Projects</h1>
 	{% for project in site.commercial %}
 		<section class="project-slider">
-			<h1 class="name">{{ project.title }}</h1>
+			<h2 class="name">{{ project.title }}</h2>
 			<div class="slider-wrapper">
 				<div class="slider">
 					{% assign folder = project.images.folder %}
 					{% for image in project.images.list %}
-						<figure class="gallery">
-							<img src="{{ image[0] | prepend: folder }}">
-						</figure>
+						<img class="gallery" src="{{ image[0] | prepend: folder }}">
 					{% endfor %}
 				</div>
 				<a class="slide back"></a>

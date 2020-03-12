@@ -1,4 +1,6 @@
 function sliderSetup() {
+	if (window.CSS.supports('display: grid')) return;
+
 	var slideButtons = document.getElementsByClassName("slide");
 	for (var i = 0; i < slideButtons.length; i++) {
 		slideButtons[i].addEventListener("click", slide)
